@@ -1,0 +1,23 @@
+.footer {
+	// .footer__top
+	&__top {
+	}
+	// .footer__info
+	&__info {
+		padding: 10px 0 24px;
+	}
+	.nav {
+		border: 1px solid #d8d8d8;
+		border-width: 1px 0;
+		padding: 23px 0 15px;
+	}
+	.nav-link {
+		padding-left: 0;
+		padding-right: 2rem;
+		color: #6c757d !important;
+	}
+	// .footer__rights
+	&__rights {
+		line-height: 42px;
+	}
+}

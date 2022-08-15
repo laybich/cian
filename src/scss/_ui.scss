@@ -1,0 +1,261 @@
+//===============================================================================================================================
+.ibg {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right bottom;
+	img {
+		display: none !important;
+	}
+	&-center {
+		background-size: cover;
+		background-position: center;
+	}
+}
+//===============================================================================================================================
+h2 {
+	position: relative;
+	font-size: 42px;
+	line-height: 1.23;
+	font-weight: 600;
+	@media (max-width: 1200px) {
+		font-size: 38px;
+	}
+	@media (max-width: 767px) {
+		font-size: 30px;
+	}
+}
+//===============================================================================================================================
+.carousel {
+	&-inner {
+		border: 1px solid #ced1d7;
+		height: 293px;
+	}
+	&-control-prev {
+		transform: rotate(180deg);
+		&-icon {
+			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;
+			background-color: $superblack_40;
+			background-size: 70%;
+			border-radius: 50%;
+			padding: 15px;
+		}
+	}
+	&-control-next {
+		&-icon {
+			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;
+			background-color: $superblack_40;
+			background-size: 70%;
+			border-radius: 50%;
+			padding: 15px;
+		}
+	}
+	&-item {
+		position: absolute;
+		top: 0;
+	}
+	img {
+		object-fit: contain;
+	}
+	&-count {
+		position: absolute;
+		bottom: 10px;
+		right: 15px;
+		z-index: 1;
+		padding: 0 8px;
+		height: 24px;
+		font-size: 12px;
+		line-height: 22px;
+		opacity: 0.7;
+		display: none;
+	}
+	&-indicators {
+		li {
+			opacity: 0;
+			pointer-events: none;
+			transition: all 0.3s ease;
+			width: 0 !important;
+		}
+		li.active {
+			opacity: 1;
+			pointer-events: all;
+			width: 0.625rem !important;
+		}
+		li.active + li,
+		li.active + li + li,
+		li.active + li + li + li,
+		li.active + li + li + li + li {
+			opacity: 1;
+			pointer-events: all;
+			width: 0.625rem !important;
+		}
+	}
+	@media (max-width: 991px) {
+		&-inner {
+			height: 225px;
+		}
+		&-item {
+			position: absolute;
+			height: 100%;
+		}
+		img {
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	@media (max-width: 767px) {
+		&-control-prev,
+		&-control-next {
+			&-icon {
+				background-size: 50%;
+			}
+		}
+		&-indicators {
+			display: none;
+		}
+		&-count {
+			display: block;
+		}
+	}
+	@media (max-width: 575px) {
+		&-inner {
+			height: 178px;
+		}
+	}
+}
+//===============================================================================================================================
+.btn {
+	border-radius: 4px !important;
+}
+//===============================================================================================================================
+.tool {
+	max-width: 386px;
+	height: 367px;
+	.nav-link {
+		outline: none;
+		&.active {
+			color: $primary_100 !important;
+			border-bottom: 3px solid $primary_100;
+		}
+	}
+	// .tool__header
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 22px;
+		padding: 16px;
+		.nav-link {
+			padding: 0;
+			color: $primary_100 !important;
+		}
+	}
+	// .tool__empty-title
+	&__empty-title {
+		margin: 15px 0 9px;
+		font-size: 15px;
+		line-height: 20px;
+		font-weight: 700;
+		text-align: center;
+	}
+	// .tool__title
+	&__title {
+	}
+	// .tool__body
+	&__body {
+		text-align: center;
+	}
+	@media (max-width: 575px) {
+		max-width: none;
+	}
+}
+//===============================================================================================================================
+.dropdown-menu button {
+	position: relative;
+	border: none;
+}
+.dropdown-menu .dropdown-submenu {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 150%;
+	left: auto;
+}
+.dropdown-menu button:hover > .dropdown-submenu {
+	display: block;
+}
+.dropdown-checkbox {
+	background-color: $white_100;
+	padding: 20px 10px 10px 25px;
+}
+.form-check-label {
+	display: block;
+	margin-bottom: 10px;
+}
+.dropdown-price {
+	background-color: transparent;
+	padding-top: 20px;
+	border: 0;
+}
+//===============================================================================================================================
+.modal {
+	&-title {
+		font-weight: bold;
+	}
+	&-header {
+		padding: 34px 14px 34px 14px;
+	}
+	[data-toggle='prev'] {
+		display: none;
+		line-height: 0;
+		padding: 0;
+		box-shadow: none;
+	}
+	.btn-close {
+		line-height: 0;
+		padding: 0;
+		box-shadow: none;
+		top: 10px;
+		right: 10px;
+		border: none !important;
+	}
+}
+//===============================================================================================================================
+.pagination {
+	.page-item {
+		&.active,
+		&:hover {
+			.page-link {
+				background-color: $primary_100;
+				color: $white_100 !important;
+			}
+		}
+	}
+}
+//===============================================================================================================================
+.checked {
+	padding-right: 20px;
+	margin-right: -20px;
+}
+.checked::after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	left: auto;
+	width: 16px;
+	height: 16px;
+	top: 5px;
+	background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy43MzIgMS42OGwtOC4wNjcgOC42ODhMLjM2NyA2LjA0MWwxLjI2NS0xLjU0OUw1LjQ3NyA3bDYuNzktNi42OCAxLjQ2NiAxLjM2eiIgZmlsbD0iIzA0NjhGRiIvPjwvc3ZnPg==)
+		50% no-repeat;
+}
+//===============================================================================================================================
+#price-select {
+	position: absolute;
+	right: 0;
+	top: 110%;
+	padding-right: 20px;
+	margin-right: -20px;
+	background-color: $white_100;
+}

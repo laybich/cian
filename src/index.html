@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.min.css">
+	<title>Купить квартиру в Москве, продажа квартир недорого - база объявлений ЦИАН. Найдено 85 433 объявления</title>
+</head>
+<body>
+	<div class="wrapper">
+
+		@@include('./_header.html')
+
+		<main class="page">
+			<div class="filter">
+				<div class="container-fluid d-none d-md-flex flex-column flex-xl-row">
+					<div class="btn-group order-2 order-xl-1">
+						<button class="btn btn-select-form" data-toggle="dropdown" data-target="eselect">Купить</button>
+						<div class="dropdown-menu dropdown-select" id="eselect">
+							<label class="form-check-label">
+								Купить
+							</label>
+							<label class="form-check-label">
+								Снять
+							</label>
+							<label class="form-check-label">
+								Посуточно
+							</label>
+						</div>
+						<div class="dropdown">
+							<button class="btn" data-toggle="dropdown">Квартиру в новостройке и вторичке</button>
+							<div class="dropdown-menu dropdown-checkbox">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									Квартира в новостройке
+								</label>
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									Квартира во вторичке
+								</label>
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									Комната
+								</label>
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									Доля
+								</label>
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									Дом
+								</label>
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									Часть дома
+								</label>
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									Таунхаус
+								</label>
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									Участок
+								</label>
+							</div>
+						</div>
+						<div class="dropdown">
+							<button class="btn" data-toggle="dropdown">Комнатность</button>
+							<div class="dropdown-menu dropdown-checkbox">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									1-комнатная
+								</label>
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									2-комнатная
+								</label>
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									3-комнатная
+								</label>
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									4-комнатная
+								</label>
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									5-комнатная
+								</label>
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									6-комнатная
+								</label>
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									Студия
+								</label>
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									Свободная планировка
+								</label>
+							</div>
+						</div>
+						<div class="dropdown">
+							<button class="btn" data-toggle="dropdown">Цена</button>
+							<div class="dropdown-menu dropdown-price" id="filter-price">
+								<div class="input-group">
+									<input class="form-control" type="type" placeholder="от">
+									<input class="form-control" type="type" placeholder="до">
+									<a class="select-price" data-toggle="collapse" data-target="#price-select" href="#">За всё</a>
+									<div class="collapse dropdown-select" id="price-select">
+										<label class="form-check-label checked">
+											За всё
+										</label>
+										<label class="form-check-label">
+											За м²
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="btn" data-toggle="modal" data-target="#filter-popup">Ещё фильтры</button>
+					</div>
+					<div class="input-group flex-nowrap order-1 order-xl-2">
+						<div class="filter__wrapper">
+							<input type="search" class="form-control" placeholder="Адрес или ЖК" aria-label="Search"
+							aria-describedby="search-addon" autocomplete="off" />
+							<div class="input-group">
+								<a class="nav-link" href="#region" data-toggle="modal" data-target="#region">Регион</a>
+								<a class="nav-link" href="#metro" data-toggle="modal" data-target="#metro">Метро</a>
+							</div>
+						</div>
+						<button type="button" class="btn btn-primary btn-search">
+							<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 7.5a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM7.5 1a6.5 6.5 0 1 0 3.835 11.749l2.958 2.958 1.414-1.414-2.958-2.958A6.5 6.5 0 0 0 7.5 1Z" fill="currentColor"></path></svg>
+						</button>
+						<button class="filter__save btn btn-light">
+							<svg width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.93 3A2.92 2.92 0 0 0 2 5.908c0 2.14 1.476 4.161 3.181 5.748A20.008 20.008 0 0 0 8 13.829a20.008 20.008 0 0 0 2.819-2.174C12.524 10.07 14 8.05 14 5.909A2.92 2.92 0 0 0 11.07 3a2.93 2.93 0 0 0-2.29 1.095L8 5.064l-.78-.969A2.93 2.93 0 0 0 4.93 3ZM8 15l-.49.871h-.001l-.002-.001-.006-.003-.019-.011a20.384 20.384 0 0 1-1.14-.726 22.016 22.016 0 0 1-2.523-2.01C2.024 11.45 0 8.924 0 5.908 0 3.192 2.212 1 4.93 1 6.09 1 7.158 1.4 8 2.068A4.925 4.925 0 0 1 11.07 1C13.788 1 16 3.192 16 5.908c0 3.016-2.024 5.541-3.819 7.212a22.022 22.022 0 0 1-3.596 2.697l-.067.039-.019.01-.006.004-.002.001L8 15Zm0 0 .49.872-.49.275-.49-.275L8 15Zm-.49-.871Z" fill="currentColor"></path></svg>
+							&nbsp;Сохранить поиск
+						</button>
+					</div>
+				</div>
+				<div class="container-fluid d-md-none">
+					<div class="row">
+						<div class="col">
+							<a class="nav-link filter__mobile-icon" href="#">
+								<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"><path d="M6.626 5H0V3h6.626a4.002 4.002 0 0 1 7.748 0H16v2h-1.626a4.002 4.002 0 0 1-7.748 0zM8.5 4a2 2 0 1 1 4 0 2 2 0 0 1-4 0zM9.374 13H16v-2H9.374a4.002 4.002 0 0 0-7.748 0H0v2h1.626a4.002 4.002 0 0 0 7.748 0zM7.5 12a2 2 0 1 0-4 0 2 2 0 0 0 4 0z"></path></g></svg>
+								Фильтры</a>
+						</div>
+						<div class="col">
+							<a class="nav-link filter__mobile-icon" href="#">
+								<svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.731 2.045C6.406 1.453 5.801 1 5 1c-.707 0-1.25.48-1.5.96C3.25 1.48 2.706 1 2 1 .766 1 0 2.073 0 3.072c0 .975.795 1.92 1.627 2.64l.1.084c.625.526 1.254.919 1.568 1.098.122.069.196.106.205.106.052 0 2.452-1.322 3.247-2.937l.027-.057a2.211 2.211 0 0 0 .224-1.028 2.168 2.168 0 0 0-.267-.933zM1.037 7.799a6.5 6.5 0 0 0 10.807 5.537l2.885 2.59 1.336-1.487-2.955-2.654a6.502 6.502 0 0 0-4.223-9.636c.075.31.113.621.113.923 0 .402-.063.78-.166 1.129A4.502 4.502 0 0 1 7.5 13a4.5 4.5 0 0 1-4.479-4.058l-.02-.005H3a2.04 2.04 0 0 1-.448-.173 5.217 5.217 0 0 1-.196-.104 13.689 13.689 0 0 1-1.318-.861z" fill="currentColor"></path></svg>
+								Сохранить</a>
+						</div>
+						<div class="col">
+							<a class="nav-link filter__mobile-icon" href="#">
+								<svg width="14" height="16" viewBox="0 0 14 16"><g data-fill-rule="fill"><circle cx="7" cy="7" r="2"></circle><path d="M6.3 15.7c-.1-.1-4.2-3.7-4.2-3.8C.7 10.7 0 8.9 0 7c0-3.9 3.1-7 7-7s7 3.1 7 7c0 1.9-.7 3.7-2.1 5-.1.1-4.1 3.7-4.2 3.8-.4.3-1 .3-1.4-.1zm-2.7-5l3.4 3 3.4-3c1-1 1.6-2.2 1.6-3.6 0-2.8-2.2-5-5-5S2 4.2 2 7c0 1.4.6 2.7 1.6 3.7 0-.1 0-.1 0 0z"></path></g></svg>
+								На карте</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="breadcrumbs d-none d-md-block">
+				<div class="container-fluid">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#">Недвижимость в Москве</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Продажа</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+
+			<section class="heading">
+				<div class="container-fluid">
+					<h1 class="h1 heading__title">Продажа квартир в Москве</h1>
+				</div>
+			</section>
+
+			<div class="summury">
+				<div class="container-fluid d-flex font-weight-bold justify-content-between justify-content-sm-start position-relative">
+					<span class="summury__offers d-none d-sm-block">Найдено 85 482 объявления</span>
+					<span class="summury__offers d-sm-none">85 482 объявлений</span>
+					<a class="nav-link d-none d-sm-block" href="#" data-toggle="dropdown" data-target="sort">
+						<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.207 1.293 4.5.586l-.707.707-3.5 3.5 1.414 1.414L3.5 4.414V15h2V4.414l1.793 1.793 1.414-1.414-3.5-3.5Zm7 13.414-.707.707-.707-.707-3.5-3.5 1.414-1.414 1.793 1.793V1h2v10.586l1.793-1.793 1.414 1.414-3.5 3.5Z" fill="currentColor"></path></svg>
+						По умолчанию</a>
+					<ul class="dropdown-menu summury__sortlist" id="sort">
+						<li><button class="checked">По умолчанию</button></li>
+						<li><button>По цене(сначала дешевле)</button></li>
+						<li><button>По цене(сначала дороже)</button></li>
+						<li><button>По цене за м² (сначала дешевле)</button></li>
+						<li><button>По цене за м² (сначала дороже)</button></li>
+						<li><button>По общей площади</button></li>
+						<li><button>По времени до метро</button></li>
+						<li><button>По улице</button></li>
+						<li><button>По дате добавления (сначала новые)</button></li>
+						<li><button>По дате добавления (сначала старые)</button></li>
+					</ul>
+					<select class="nav-link summury__sortlist--mobile d-sm-none">
+						<option value="">по умолчанию</option>
+						<option value="">по цене</option>
+						<option value="">по времени до метро</option>
+						<option value="">по цене за м²</option>
+						<option value="">по улице</option>
+						<option value="">по общей площади</option>
+					</select>
+					<a class="nav-link d-none d-lg-block" href="#">
+						<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m6.05.385.434.24 3.612 2 4.58-1.57L16 .6v12.336l-.595.264-5 2.215-.454.2-.435-.24-3.612-2-4.58 1.571L0 15.4V3.064L.595 2.8l5-2.214.455-.201ZM2 4.365V12.6l3-1.028V3.037L2 4.365Zm7 8.438-2-1.107v-8.5l2 1.108v8.5Zm2 .16 3-1.328V3.4l-3 1.03v8.535Z" fill="currentColor"></path></svg>
+						На карте</a>
+				</div>
+			</div>
+
+			<section class="quick-links">
+				<div class="container-fluid">
+					<h3 class="quick-links__title d-none d-md-block">Рекомендуем посмотреть</h3>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-lg-3">
+							<a class="nav-link" href="#">
+								квартиры во вторичке
+								<span class="text-secondary">45 273</span>
+							</a>
+							<a class="nav-link" href="#">
+								2 комнатные
+								<span class="text-secondary">28 370</span>
+							</a>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-3">
+							<a class="nav-link" href="#">
+								3 комнатные
+								<span class="text-secondary">20 565</span>
+							</a>
+							<a class="nav-link" href="#">
+								1 комнатные
+								<span class="text-secondary">20 187</span>
+							</a>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-3">
+							<a class="nav-link" href="#">
+								квартиры в новостройке
+								<span class="text-secondary">40 203</span>
+							</a>
+							<a class="nav-link" href="#">
+								студия
+								<span class="text-secondary">6 342</span>
+							</a>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-3">
+							<a class="nav-link" href="#">
+								4 комнатные
+								<span class="text-secondary">6 331</span>
+							</a>
+							<a class="nav-link" href="#">
+								5 комнатные
+								<span class="text-secondary">2 077</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="flats">
+				<div class="container-fluid">
+					<div class="flats__card card">
+						<div class="row">
+							<div class="col-md-5 col-lg-4">
+								<div class="card__building-builder badge badge-dark">Новостройка от застройщика</div>
+								<a class="card__icon" href="#" data-toggle="tooltip" title="Объявление с 3D-туром"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M2.168 7.085h1.015c.483 0 .84-.12 1.074-.362.233-.242.349-.562.349-.962 0-.387-.116-.688-.35-.903-.228-.215-.544-.323-.948-.323-.365 0-.67.101-.916.303a.95.95 0 0 0-.37.778H.12c0-.5.134-.949.402-1.344.272-.4.65-.712 1.133-.936A3.805 3.805 0 0 1 3.262 3c1.015 0 1.81.244 2.385.731.576.484.863 1.151.863 2.004 0 .439-.134.843-.402 1.212-.268.37-.619.652-1.054.85.54.193.942.483 1.206.87.268.386.402.843.402 1.37 0 .853-.312 1.536-.936 2.05-.62.514-1.44.77-2.464.77-.958 0-1.742-.252-2.353-.757C.303 11.595 0 10.927 0 10.097h1.904c0 .36.134.654.402.883.273.228.607.342 1.002.342.452 0 .806-.118 1.06-.355.26-.242.39-.56.39-.956 0-.958-.528-1.436-1.582-1.436H2.168v-1.49zM8.889 12.726V3.132h2.729c.843 0 1.597.19 2.26.573a3.942 3.942 0 0 1 1.562 1.621c.373.699.56 1.494.56 2.385v.442c0 .892-.184 1.685-.553 2.379a3.92 3.92 0 0 1-1.549 1.614c-.668.382-1.421.576-2.26.58h-2.75zm1.754-7.993v6.405h.955c.773 0 1.364-.253 1.773-.758.408-.505.617-1.228.626-2.168v-.507c0-.975-.202-1.713-.606-2.214-.405-.505-.995-.758-1.773-.758h-.975z"></path></g></svg></a>
+								<div id="flats1" class="carousel slide" data-ride="carousel">
+									<div class="carousel-count badge badge-dark"></div>
+									<ol class="carousel-indicators">
+										<li data-target="#flats1" data-slide-to="0" class="active"></li>
+										<li data-target="#flats1" data-slide-to="1"></li>
+										<li data-target="#flats1" data-slide-to="2"></li>
+										<li data-target="#flats1" data-slide-to="3"></li>
+										<li data-target="#flats1" data-slide-to="4"></li>
+										<li data-target="#flats1" data-slide-to="5"></li>
+										<li data-target="#flats1" data-slide-to="6"></li>
+										<li data-target="#flats1" data-slide-to="7"></li>
+										<li data-target="#flats1" data-slide-to="8"></li>
+										<li data-target="#flats1" data-slide-to="9"></li>
+										<li data-target="#flats1" data-slide-to="10"></li>
+										<li data-target="#flats1" data-slide-to="11"></li>
+									</ol>
+									<div class="carousel-inner">
+										<a href="#" class="carousel-item active"><img class="d-block w-100" src="img/flats/01/00.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/01.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/02.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/03.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/04.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/05.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/06.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/07.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/08.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/09.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/10.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/11.jpg" alt=""></a>
+									</div>
+									<a class="carousel-control-prev" href="#flats1" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#flats1" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+								<div class="card__images">
+									<picture>
+										<a href="#">
+											<img src="img/flats/01/01.jpg" alt="">
+										</a>
+									</picture>
+									<picture>
+										<a href="#">
+											<img src="img/flats/01/02.jpg" alt="">
+										</a>
+									</picture>
+									<picture>
+										<a href="#">
+											<img src="img/flats/01/03.jpg" alt="">
+										</a>
+									</picture>
+								</div>
+							</div>
+							<div class="col-md-7 col-lg-6">
+								 <div class="d-flex flex-column h-100 px-3 px-md-0">
+									<a href="#flat" class="card__link"></a>
+									<div class="card__price d-sm-none">42 399 507 ₽</div>
+									<h2 class="card__title text-primary">4-комн. кв., 86 м<sup>2</sup>, 9/18 этаж</h2>
+									<div class="card__infoaddress">
+										<a class="nav-link card__lcd" href="#">ЖК «Voxhall»</a>
+										<div class="card__rent text-muted">сдача ГК: 2 кв. 2025 года</div>
+										<a class="card__place text-dark" href="#">
+											<svg class="text-muted" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.792 1h8.416C13.194 1 14 1.792 14 2.76v8.36c0 .528-.358.88-.896.88h-1.747l1.3 3h-2.18l-1.3-3h-2.39l-1.275 3H3.339l1.275-3H2.896C2.36 12 2 11.648 2 11.12V2.76C2 1.792 2.807 1 3.792 1zM4 6h8V3H4v3zm1 4.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm7-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" fill="currentColor"></path></svg>
+											Москва (Павелецкий вокзал)
+										</a>
+										<span class="text-muted">12 минут пешком</span>
+										<p class="card__address">
+											<a class="text-muted" href="#">Москва, </a>
+											<a class="text-muted" href="#">ЦАО, </a>
+											<a class="text-muted" href="#">р-н Замоскворечье, </a>
+											<a class="text-muted" href="#">Летниковская улица</a>
+										</p>
+									</div>
+									<div class="card__price d-none d-sm-block">
+										42 399 507 ₽<br>
+										<span class="text-muted">493 018 ₽/м²</span>
+									</div>
+									<div class="card__description d-none d-sm-block">
+										<p>Продаётся 4-комнатная квартира общей площадью 86 м² c просторной кухней 5 м² на 9 этаже в корпусе 3 Жилого Комплекса Voxhall. Срок сдачи 2 кв. 2025 года. ЖК Voxhall - это дома заряженные энергией города. Новый Архитектурный проект бизнес-класса рядом с метро Павелецкая. У вас много дел и главным активом является время, которого всегда не хватает. Именно для вас мы создаём особые условия для жизни в самом центре города, в центре событий, чтобы вы могли жить с комфортом, не теряя динамичного ритма жизни. Voxhall станет вашим новым домом, в стенах которого вы сможете пополнить запас энергии и сил, чтобы проживать каждый следующий день на все 100%. Проект расположен на Летниковской улице в замоскворецком районе в непосредственной близости от павелецкого транспортного узла. Перемещайтесь так, как удобно именно вам: широкие проспекты, микромобильный транспорт, сеть велодорожек, пешеходные зоны, подземный, наземный, автомобильный, железнодорожный транспорт к вашим услугам, чтобы вы молниеносно смогли добраться туда, где вас ждут дела или напротив, развлечения. Квартира в Москве.</p>
+									</div>
+									<a class="builder__btn builder__btn--mobile btn btn-light" href="tel:+7 499 285-30-28">Позвонить</a>
+								</div>
+							</div>
+							<div class="col-lg-2 d-none d-lg-block">
+								<div class="card__builder builder">
+									<a class="builder__link" href="#"></a>
+										<picture class="builder__icon">
+											<img src="img/builders/etalon.jpg" alt="">
+										</picture>
+										<div class="builder__name">Эталон</div>
+										<div class="text-muted">Застройщик</div>
+									</a>
+									<button class="builder__btn btn btn-primary">+7 499 285-30-28</button>
+									<a class="builder__more" href="#">Ещё объекты</a>
+								</div>
+							</div>
+						</div>
+						<ul class="card__tools">
+							<li data-toggle="tooltip" data-placement="left" title="Добавить в избранное">
+								<button class="card__tool card__tool--saved">
+									<svg  width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.93 3A2.92 2.92 0 0 0 2 5.908c0 2.14 1.476 4.161 3.181 5.748A20.008 20.008 0 0 0 8 13.829a20.008 20.008 0 0 0 2.819-2.174C12.524 10.07 14 8.05 14 5.909A2.92 2.92 0 0 0 11.07 3a2.93 2.93 0 0 0-2.29 1.095L8 5.064l-.78-.969A2.93 2.93 0 0 0 4.93 3zM8 15l-.49.871h-.001l-.002-.001-.006-.003-.019-.011a20.384 20.384 0 0 1-1.14-.726 22.016 22.016 0 0 1-2.523-2.01C2.024 11.45 0 8.924 0 5.908 0 3.192 2.212 1 4.93 1 6.09 1 7.158 1.4 8 2.068A4.925 4.925 0 0 1 11.07 1C13.788 1 16 3.192 16 5.908c0 3.016-2.024 5.541-3.819 7.212a22.022 22.022 0 0 1-3.596 2.697l-.067.039-.019.01-.006.004-.002.001L8 15zm0 0 .49.872-.49.275-.49-.275L8 15zm-.49-.871z" fill="currentColor"></path></svg>
+									<svg class="secondary" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5.51C0 11.46 8 16 8 16s8-4.54 8-10.49C16 3.018 13.99 1 11.509 1 10.089 1 8.823 1.661 8 2.694A4.476 4.476 0 0 0 4.491 1C2.011 1 0 3.019 0 5.51z" fill="currentColor"></path></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Добавить к сравнению">
+								<button class="card__tool card__tool--compare">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 4h14V2H1v2zm0 5h10V7H1v2zm7 5H1v-2h7v2zm4 2v-2h-2v-2h2v-2h2v2h2v2h-2v2h-2z" fill="currentColor"></path></svg>
+									<svg class="secondary" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M1 4h14V2H1v2zM1 9h10V7H1v2zM8 14H1v-2h7v2zM15.76 11.15l-1.52-1.3-2.297 2.68-1.237-1.237-1.414 1.414 2.764 2.764 3.703-4.32z"></path></g></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Скрыть">
+								<button class="card__tool" data-toggle="modal" data-target="#auth">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.66 2.184 14.246.77l-2.44 2.44C10.72 2.5 9.442 2 8 2 3 2 0 8 0 8s1.1 2.201 3.08 3.937L.77 14.246l1.414 1.414L15.66 2.184zM5.444 9.572l4.128-4.128a3 3 0 0 0-4.128 4.128z"></path><path d="m6.446 13.804 8.062-8.063C15.478 6.957 16 8 16 8s-3 6-8 6c-.542 0-1.06-.07-1.554-.196z"></path></g></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Пожаловаться">
+								<button class="card__tool" data-toggle="modal" data-target="#report">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86 2.067a1 1 0 0 0-1.72 0L.339 13.488A1 1 0 0 0 1.198 15h13.605a1 1 0 0 0 .859-1.512L8.859 2.068zM9 5H7v6h2V5zm-1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86 2.067a1 1 0 0 0-1.72 0L.339 13.488A1 1 0 0 0 1.198 15h13.605a1 1 0 0 0 .859-1.512L8.859 2.068zM9 5H7v6h2V5zm-1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Показать на карте">
+								<button class="card__tool" data-toggle="modal" data-target="#map1">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 16s7-4 7-9.333C15 2.985 11.866 0 8 0S1 2.985 1 6.667C1 12 8 16 8 16zm0-7.428a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="currentColor"></path></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Скачать PDF">
+								<a class="card__tool" href="img/flats/01/data.pdf" download="img/flats/01/data.pdf">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4h-4V0H3zm8 0v3h3l-3-3zM8 12H4v1h4v-1zM4 9h8v1H4V9z" fill="currentColor"></path></svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="flats__card card">
+						<div class="row">
+							<div class="col-md-5 col-lg-4">
+								<div class="card__building-builder badge badge-dark">Новостройка от застройщика</div>
+								<a class="card__icon" href="#" data-toggle="tooltip" title="Объявление с записью на просмотр"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 0h2v2h.4c.56 0 .84 0 1.054.109a1 1 0 0 1 .437.437C15 2.76 15 3.04 15 3.6v1.655A7 7 0 0 0 4.674 14H2.6c-.56 0-.84 0-1.054-.109a1 1 0 0 1-.437-.437C1 13.24 1 12.96 1 12.4V3.6c0-.56 0-.84.109-1.054a1 1 0 0 1 .437-.437C1.76 2 2.04 2 2.6 2H3V0h2v2h6V0zm5 11a5 5 0 1 1-10 0 5 5 0 0 1 10 0zm-6 0V7.5h2V10h1.5v2H10v-1z" fill="currentColor"></path></svg></a>
+								<div id="flats2" class="carousel slide" data-ride="carousel">
+									<div class="carousel-count badge badge-dark"></div>
+									<ol class="carousel-indicators">
+										<li data-target="#flats2" data-slide-to="0" class="active"></li>
+										<li data-target="#flats2" data-slide-to="1"></li>
+										<li data-target="#flats2" data-slide-to="2"></li>
+										<li data-target="#flats2" data-slide-to="3"></li>
+										<li data-target="#flats2" data-slide-to="4"></li>
+										<li data-target="#flats2" data-slide-to="5"></li>
+										<li data-target="#flats2" data-slide-to="6"></li>
+										<li data-target="#flats2" data-slide-to="7"></li>
+										<li data-target="#flats2" data-slide-to="8"></li>
+										<li data-target="#flats2" data-slide-to="9"></li>
+										<li data-target="#flats2" data-slide-to="10"></li>
+										<li data-target="#flats2" data-slide-to="12"></li>
+										<li data-target="#flats2" data-slide-to="13"></li>
+										<li data-target="#flats2" data-slide-to="14"></li>
+										<li data-target="#flats2" data-slide-to="15"></li>
+										<li data-target="#flats2" data-slide-to="16"></li>
+									</ol>
+									<div class="carousel-inner">
+										<a href="#" class="carousel-item active"><img class="d-block w-100" src="img/flats/02/00.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/01.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/02.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/03.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/04.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/05.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/06.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/07.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/08.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/09.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/10.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/11.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/12.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/13.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/14.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/15.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/16.jpg" alt=""></a>
+									</div>
+									<a class="carousel-control-prev" href="#flats2" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#flats2" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+								<div class="card__images">
+									<picture>
+										<a href="#">
+											<img src="img/flats/02/01.jpg" alt="">
+										</a>
+									</picture>
+									<picture>
+										<a href="#">
+											<img src="img/flats/02/02.jpg" alt="">
+										</a>
+									</picture>
+									<picture>
+										<a href="#">
+											<img src="img/flats/02/03.jpg" alt="">
+										</a>
+									</picture>
+								</div>
+							</div>
+							<div class="col-md-7 col-lg-6">
+								 <div class="d-flex flex-column h-100 px-3 px-md-0">
+									<a href="#flat" class="card__link"></a>
+									<div class="card__price d-sm-none">56 600 000 ₽</div>
+									<h2 class="card__title text-primary">4-комн. кв., 123,11 м<sup>2</sup>, 13/20 этаж</h2>
+									<div class="text-danger">Ипотека 2,99%</div>
+									<div class="card__infoaddress">
+										<a class="nav-link card__lcd" href="#">ЖК «Aquatoria»</a>
+										<div class="card__rent text-muted">сдача ГК: 4 кв. 2021 года</div>
+										<a class="card__place text-dark" href="#">
+											<svg data-name="UndergroundIconContainer" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.233v1.481h5.556v-1.481h-.89l.89-3.175L8 12.233l2.444-3.175.89 3.175h-.89v1.481H16v-1.481h-.889l-4-9.947L8 8.423 4.889 2.286l-4 9.947H0z" fill="currentColor"></path></svg>
+											Планерная
+										</a>
+										<span class="text-muted">19 минут пешком</span>
+										<p class="card__address">
+											<a class="text-muted" href="#">Москва, </a>
+											<a class="text-muted" href="#">САО, </a>
+											<a class="text-muted" href="#">р-н Левобережный, </a>
+											<a class="text-muted" href="#">м. Планерная, </a>
+											<a class="text-muted" href="#">Акватория ЖК</a>
+										</p>
+									</div>
+									<div class="card__price d-none d-sm-block">
+										56 600 000 ₽ — Последняя квартира на этаже!<br>
+										<span class="text-muted">459 751 ₽/м²</span>
+									</div>
+									<div class="card__description d-none d-sm-block">
+										<p>О жилом комплексе. На берегу реки, на участке площадью 5 га появятся четыре жилых здания переменной этажности. Комплекс спроектирован таким образом, что почти из всех квартир открывается прекрасный панорамный вид на реку. Принципиальным моментом станет сохранение здоровой экологической обстановки на территории комплекса: у автомобилей не будет доступа во внутренний двор и на набережную. Продам квартиру в Москве.</p>
+									</div>
+									<a class="builder__btn builder__btn--mobile btn btn-light" href="tel:+7 499 285-30-28">Позвонить</a>
+								</div>
+							</div>
+							<div class="col-lg-2 d-none d-lg-block">
+								<div class="card__builder builder">
+									<a class="builder__link" href="#"></a>
+										<picture class="builder__icon">
+											<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 6a6 6 0 0 0-1.839-4.322L11.5 3H10V.343a5.998 5.998 0 0 0-4 0V3H4.5l-.661-1.323A6.004 6.004 0 0 0 2 6H1v2h14V6h-1zm-6 8c-1.136 0-2.113-.56-2.836-1.489C4.434 11.571 4 10.291 4 9H2c0 1.71.567 3.429 1.586 4.739C4.613 15.059 6.136 16 8 16c1.864 0 3.387-.94 4.414-2.261C13.434 12.429 14 10.709 14 9h-2c0 1.29-.433 2.571-1.164 3.511C10.113 13.441 9.136 14 8 14z" fill="currentColor"></path></svg>
+										</picture>
+										<div class="builder__name">Wainbrige</div>
+										<div class="text-muted">Застройщик</div>
+									</a>
+									<button class="builder__btn btn btn-primary">+7 499 285-30-28</button>
+									<a class="builder__more" href="#">Ещё объекты</a>
+								</div>
+							</div>
+							<ul class="card__tools">
+								<li data-toggle="tooltip" data-placement="left" title="Добавить в избранное">
+									<button class="card__tool card__tool--saved">
+										<svg  width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.93 3A2.92 2.92 0 0 0 2 5.908c0 2.14 1.476 4.161 3.181 5.748A20.008 20.008 0 0 0 8 13.829a20.008 20.008 0 0 0 2.819-2.174C12.524 10.07 14 8.05 14 5.909A2.92 2.92 0 0 0 11.07 3a2.93 2.93 0 0 0-2.29 1.095L8 5.064l-.78-.969A2.93 2.93 0 0 0 4.93 3zM8 15l-.49.871h-.001l-.002-.001-.006-.003-.019-.011a20.384 20.384 0 0 1-1.14-.726 22.016 22.016 0 0 1-2.523-2.01C2.024 11.45 0 8.924 0 5.908 0 3.192 2.212 1 4.93 1 6.09 1 7.158 1.4 8 2.068A4.925 4.925 0 0 1 11.07 1C13.788 1 16 3.192 16 5.908c0 3.016-2.024 5.541-3.819 7.212a22.022 22.022 0 0 1-3.596 2.697l-.067.039-.019.01-.006.004-.002.001L8 15zm0 0 .49.872-.49.275-.49-.275L8 15zm-.49-.871z" fill="currentColor"></path></svg>
+										<svg class="secondary" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5.51C0 11.46 8 16 8 16s8-4.54 8-10.49C16 3.018 13.99 1 11.509 1 10.089 1 8.823 1.661 8 2.694A4.476 4.476 0 0 0 4.491 1C2.011 1 0 3.019 0 5.51z" fill="currentColor"></path></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Добавить к сравнению">
+									<button class="card__tool card__tool--compare">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 4h14V2H1v2zm0 5h10V7H1v2zm7 5H1v-2h7v2zm4 2v-2h-2v-2h2v-2h2v2h2v2h-2v2h-2z" fill="currentColor"></path></svg>
+										<svg class="secondary" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M1 4h14V2H1v2zM1 9h10V7H1v2zM8 14H1v-2h7v2zM15.76 11.15l-1.52-1.3-2.297 2.68-1.237-1.237-1.414 1.414 2.764 2.764 3.703-4.32z"></path></g></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Скрыть">
+									<button class="card__tool" data-toggle="modal" data-target="#auth">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.66 2.184 14.246.77l-2.44 2.44C10.72 2.5 9.442 2 8 2 3 2 0 8 0 8s1.1 2.201 3.08 3.937L.77 14.246l1.414 1.414L15.66 2.184zM5.444 9.572l4.128-4.128a3 3 0 0 0-4.128 4.128z"></path><path d="m6.446 13.804 8.062-8.063C15.478 6.957 16 8 16 8s-3 6-8 6c-.542 0-1.06-.07-1.554-.196z"></path></g></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Пожаловаться">
+									<button class="card__tool" data-toggle="modal" data-target="#report">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86 2.067a1 1 0 0 0-1.72 0L.339 13.488A1 1 0 0 0 1.198 15h13.605a1 1 0 0 0 .859-1.512L8.859 2.068zM9 5H7v6h2V5zm-1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86 2.067a1 1 0 0 0-1.72 0L.339 13.488A1 1 0 0 0 1.198 15h13.605a1 1 0 0 0 .859-1.512L8.859 2.068zM9 5H7v6h2V5zm-1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Показать на карте">
+									<button class="card__tool" data-toggle="modal" data-target="#map1">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 16s7-4 7-9.333C15 2.985 11.866 0 8 0S1 2.985 1 6.667C1 12 8 16 8 16zm0-7.428a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="currentColor"></path></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Скачать PDF">
+									<a class="card__tool" href="img/flats/01/data.pdf" download="img/flats/01/data.pdf">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4h-4V0H3zm8 0v3h3l-3-3zM8 12H4v1h4v-1zM4 9h8v1H4V9z" fill="currentColor"></path></svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flats__card card">
+						<div class="row">
+							<div class="col-md-5 col-lg-4">
+								<div class="card__building-builder badge badge-dark">Новостройка от застройщика</div>
+								<a class="card__icon" href="#" data-toggle="tooltip" title="Объявление с 3D-туром"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M2.168 7.085h1.015c.483 0 .84-.12 1.074-.362.233-.242.349-.562.349-.962 0-.387-.116-.688-.35-.903-.228-.215-.544-.323-.948-.323-.365 0-.67.101-.916.303a.95.95 0 0 0-.37.778H.12c0-.5.134-.949.402-1.344.272-.4.65-.712 1.133-.936A3.805 3.805 0 0 1 3.262 3c1.015 0 1.81.244 2.385.731.576.484.863 1.151.863 2.004 0 .439-.134.843-.402 1.212-.268.37-.619.652-1.054.85.54.193.942.483 1.206.87.268.386.402.843.402 1.37 0 .853-.312 1.536-.936 2.05-.62.514-1.44.77-2.464.77-.958 0-1.742-.252-2.353-.757C.303 11.595 0 10.927 0 10.097h1.904c0 .36.134.654.402.883.273.228.607.342 1.002.342.452 0 .806-.118 1.06-.355.26-.242.39-.56.39-.956 0-.958-.528-1.436-1.582-1.436H2.168v-1.49zM8.889 12.726V3.132h2.729c.843 0 1.597.19 2.26.573a3.942 3.942 0 0 1 1.562 1.621c.373.699.56 1.494.56 2.385v.442c0 .892-.184 1.685-.553 2.379a3.92 3.92 0 0 1-1.549 1.614c-.668.382-1.421.576-2.26.58h-2.75zm1.754-7.993v6.405h.955c.773 0 1.364-.253 1.773-.758.408-.505.617-1.228.626-2.168v-.507c0-.975-.202-1.713-.606-2.214-.405-.505-.995-.758-1.773-.758h-.975z"></path></g></svg></a>
+								<div id="flats3" class="carousel slide" data-ride="carousel">
+									<div class="carousel-count badge badge-dark"></div>
+									<ol class="carousel-indicators">
+										<li data-target="#flats3" data-slide-to="0" class="active"></li>
+										<li data-target="#flats3" data-slide-to="1"></li>
+										<li data-target="#flats3" data-slide-to="2"></li>
+										<li data-target="#flats3" data-slide-to="3"></li>
+										<li data-target="#flats3" data-slide-to="4"></li>
+										<li data-target="#flats3" data-slide-to="5"></li>
+										<li data-target="#flats3" data-slide-to="6"></li>
+										<li data-target="#flats3" data-slide-to="7"></li>
+										<li data-target="#flats3" data-slide-to="8"></li>
+										<li data-target="#flats3" data-slide-to="9"></li>
+										<li data-target="#flats3" data-slide-to="10"></li>
+										<li data-target="#flats3" data-slide-to="11"></li>
+									</ol>
+									<div class="carousel-inner">
+										<a href="#" class="carousel-item active"><img class="d-block w-100" src="img/flats/01/00.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/01.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/02.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/03.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/04.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/05.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/06.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/07.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/08.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/09.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/10.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/11.jpg" alt=""></a>
+									</div>
+									<a class="carousel-control-prev" href="#flats3" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#flats3" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+								<div class="card__images">
+									<picture>
+										<a href="#">
+											<img src="img/flats/01/01.jpg" alt="">
+										</a>
+									</picture>
+									<picture>
+										<a href="#">
+											<img src="img/flats/01/02.jpg" alt="">
+										</a>
+									</picture>
+									<picture>
+										<a href="#">
+											<img src="img/flats/01/03.jpg" alt="">
+										</a>
+									</picture>
+								</div>
+							</div>
+							<div class="col-md-7 col-lg-6">
+								 <div class="d-flex flex-column h-100 px-3 px-md-0">
+									<a href="#flat" class="card__link"></a>
+									<div class="card__price d-sm-none">42 399 507 ₽</div>
+									<h2 class="card__title text-primary">4-комн. кв., 86 м<sup>2</sup>, 9/18 этаж</h2>
+									<div class="card__infoaddress">
+										<a class="nav-link card__lcd" href="#">ЖК «Voxhall»</a>
+										<div class="card__rent text-muted">сдача ГК: 2 кв. 2025 года</div>
+										<a class="card__place text-dark" href="#">
+											<svg class="text-muted" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.792 1h8.416C13.194 1 14 1.792 14 2.76v8.36c0 .528-.358.88-.896.88h-1.747l1.3 3h-2.18l-1.3-3h-2.39l-1.275 3H3.339l1.275-3H2.896C2.36 12 2 11.648 2 11.12V2.76C2 1.792 2.807 1 3.792 1zM4 6h8V3H4v3zm1 4.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm7-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" fill="currentColor"></path></svg>
+											Москва (Павелецкий вокзал)
+										</a>
+										<span class="text-muted">12 минут пешком</span>
+										<p class="card__address">
+											<a class="text-muted" href="#">Москва, </a>
+											<a class="text-muted" href="#">ЦАО, </a>
+											<a class="text-muted" href="#">р-н Замоскворечье, </a>
+											<a class="text-muted" href="#">Летниковская улица</a>
+										</p>
+									</div>
+									<div class="card__price d-none d-sm-block">
+										42 399 507 ₽<br>
+										<span class="text-muted">493 018 ₽/м²</span>
+									</div>
+									<div class="card__description d-none d-sm-block">
+										<p>Продаётся 4-комнатная квартира общей площадью 86 м² c просторной кухней 5 м² на 9 этаже в корпусе 3 Жилого Комплекса Voxhall. Срок сдачи 2 кв. 2025 года. ЖК Voxhall - это дома заряженные энергией города. Новый Архитектурный проект бизнес-класса рядом с метро Павелецкая. У вас много дел и главным активом является время, которого всегда не хватает. Именно для вас мы создаём особые условия для жизни в самом центре города, в центре событий, чтобы вы могли жить с комфортом, не теряя динамичного ритма жизни. Voxhall станет вашим новым домом, в стенах которого вы сможете пополнить запас энергии и сил, чтобы проживать каждый следующий день на все 100%. Проект расположен на Летниковской улице в замоскворецком районе в непосредственной близости от павелецкого транспортного узла. Перемещайтесь так, как удобно именно вам: широкие проспекты, микромобильный транспорт, сеть велодорожек, пешеходные зоны, подземный, наземный, автомобильный, железнодорожный транспорт к вашим услугам, чтобы вы молниеносно смогли добраться туда, где вас ждут дела или напротив, развлечения. Квартира в Москве.</p>
+									</div>
+									<a class="builder__btn builder__btn--mobile btn btn-light" href="tel:+7 499 285-30-28">Позвонить</a>
+								</div>
+							</div>
+							<div class="col-lg-2 d-none d-lg-block">
+								<div class="card__builder builder">
+									<a class="builder__link" href="#"></a>
+										<picture class="builder__icon">
+											<img src="img/builders/etalon.jpg" alt="">
+										</picture>
+										<div class="builder__name">Эталон</div>
+										<div class="text-muted">Застройщик</div>
+									</a>
+									<button class="builder__btn btn btn-primary">+7 499 285-30-28</button>
+									<a class="builder__more" href="#">Ещё объекты</a>
+								</div>
+							</div>
+						</div>
+						<ul class="card__tools">
+							<li data-toggle="tooltip" data-placement="left" title="Добавить в избранное">
+								<button class="card__tool card__tool--saved">
+									<svg  width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.93 3A2.92 2.92 0 0 0 2 5.908c0 2.14 1.476 4.161 3.181 5.748A20.008 20.008 0 0 0 8 13.829a20.008 20.008 0 0 0 2.819-2.174C12.524 10.07 14 8.05 14 5.909A2.92 2.92 0 0 0 11.07 3a2.93 2.93 0 0 0-2.29 1.095L8 5.064l-.78-.969A2.93 2.93 0 0 0 4.93 3zM8 15l-.49.871h-.001l-.002-.001-.006-.003-.019-.011a20.384 20.384 0 0 1-1.14-.726 22.016 22.016 0 0 1-2.523-2.01C2.024 11.45 0 8.924 0 5.908 0 3.192 2.212 1 4.93 1 6.09 1 7.158 1.4 8 2.068A4.925 4.925 0 0 1 11.07 1C13.788 1 16 3.192 16 5.908c0 3.016-2.024 5.541-3.819 7.212a22.022 22.022 0 0 1-3.596 2.697l-.067.039-.019.01-.006.004-.002.001L8 15zm0 0 .49.872-.49.275-.49-.275L8 15zm-.49-.871z" fill="currentColor"></path></svg>
+									<svg class="secondary" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5.51C0 11.46 8 16 8 16s8-4.54 8-10.49C16 3.018 13.99 1 11.509 1 10.089 1 8.823 1.661 8 2.694A4.476 4.476 0 0 0 4.491 1C2.011 1 0 3.019 0 5.51z" fill="currentColor"></path></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Добавить к сравнению">
+								<button class="card__tool card__tool--compare">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 4h14V2H1v2zm0 5h10V7H1v2zm7 5H1v-2h7v2zm4 2v-2h-2v-2h2v-2h2v2h2v2h-2v2h-2z" fill="currentColor"></path></svg>
+									<svg class="secondary" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M1 4h14V2H1v2zM1 9h10V7H1v2zM8 14H1v-2h7v2zM15.76 11.15l-1.52-1.3-2.297 2.68-1.237-1.237-1.414 1.414 2.764 2.764 3.703-4.32z"></path></g></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Скрыть">
+								<button class="card__tool" data-toggle="modal" data-target="#auth">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.66 2.184 14.246.77l-2.44 2.44C10.72 2.5 9.442 2 8 2 3 2 0 8 0 8s1.1 2.201 3.08 3.937L.77 14.246l1.414 1.414L15.66 2.184zM5.444 9.572l4.128-4.128a3 3 0 0 0-4.128 4.128z"></path><path d="m6.446 13.804 8.062-8.063C15.478 6.957 16 8 16 8s-3 6-8 6c-.542 0-1.06-.07-1.554-.196z"></path></g></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Пожаловаться">
+								<button class="card__tool" data-toggle="modal" data-target="#report">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86 2.067a1 1 0 0 0-1.72 0L.339 13.488A1 1 0 0 0 1.198 15h13.605a1 1 0 0 0 .859-1.512L8.859 2.068zM9 5H7v6h2V5zm-1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86 2.067a1 1 0 0 0-1.72 0L.339 13.488A1 1 0 0 0 1.198 15h13.605a1 1 0 0 0 .859-1.512L8.859 2.068zM9 5H7v6h2V5zm-1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Показать на карте">
+								<button class="card__tool" data-toggle="modal" data-target="#map1">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 16s7-4 7-9.333C15 2.985 11.866 0 8 0S1 2.985 1 6.667C1 12 8 16 8 16zm0-7.428a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="currentColor"></path></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Скачать PDF">
+								<a class="card__tool" href="img/flats/01/data.pdf" download="img/flats/01/data.pdf">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4h-4V0H3zm8 0v3h3l-3-3zM8 12H4v1h4v-1zM4 9h8v1H4V9z" fill="currentColor"></path></svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a class="banner">
+						<div class="banner__content ibg">
+							<div class="banner__title h2">Новая квартира в современном доме</div>
+							<div class="banner__offer h4">Новостройки с выгодными ставками по ипотеке</div>
+							<button class="btn btn-primary">Смотреть предложения</button>
+							<img src="https://cdn.cian.site/frontend/frontend-serp/mixed-bg.fcbaf06ffa5d62e22cb2.png" alt="">
+						</div>
+					</a>
+					<div class="flats__card card">
+						<div class="row">
+							<div class="col-md-5 col-lg-4">
+								<div class="card__building-builder badge badge-dark">Новостройка от застройщика</div>
+								<a class="card__icon" href="#" data-toggle="tooltip" title="Объявление с записью на просмотр"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 0h2v2h.4c.56 0 .84 0 1.054.109a1 1 0 0 1 .437.437C15 2.76 15 3.04 15 3.6v1.655A7 7 0 0 0 4.674 14H2.6c-.56 0-.84 0-1.054-.109a1 1 0 0 1-.437-.437C1 13.24 1 12.96 1 12.4V3.6c0-.56 0-.84.109-1.054a1 1 0 0 1 .437-.437C1.76 2 2.04 2 2.6 2H3V0h2v2h6V0zm5 11a5 5 0 1 1-10 0 5 5 0 0 1 10 0zm-6 0V7.5h2V10h1.5v2H10v-1z" fill="currentColor"></path></svg></a>
+								<div id="flats4" class="carousel slide" data-ride="carousel">
+									<div class="carousel-count badge badge-dark"></div>
+									<ol class="carousel-indicators">
+										<li data-target="#flats4" data-slide-to="0" class="active"></li>
+										<li data-target="#flats4" data-slide-to="1"></li>
+										<li data-target="#flats4" data-slide-to="2"></li>
+										<li data-target="#flats4" data-slide-to="3"></li>
+										<li data-target="#flats4" data-slide-to="4"></li>
+										<li data-target="#flats4" data-slide-to="5"></li>
+										<li data-target="#flats4" data-slide-to="6"></li>
+										<li data-target="#flats4" data-slide-to="7"></li>
+										<li data-target="#flats4" data-slide-to="8"></li>
+										<li data-target="#flats4" data-slide-to="9"></li>
+										<li data-target="#flats4" data-slide-to="10"></li>
+										<li data-target="#flats4" data-slide-to="12"></li>
+										<li data-target="#flats4" data-slide-to="13"></li>
+										<li data-target="#flats4" data-slide-to="14"></li>
+										<li data-target="#flats4" data-slide-to="15"></li>
+										<li data-target="#flats4" data-slide-to="16"></li>
+									</ol>
+									<div class="carousel-inner">
+										<a href="#" class="carousel-item active"><img class="d-block w-100" src="img/flats/02/00.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/01.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/02.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/03.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/04.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/05.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/06.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/07.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/08.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/09.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/10.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/11.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/12.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/13.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/14.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/15.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/16.jpg" alt=""></a>
+									</div>
+									<a class="carousel-control-prev" href="#flats4" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#flats4" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+								<div class="card__images">
+									<picture>
+										<a href="#">
+											<img src="img/flats/02/01.jpg" alt="">
+										</a>
+									</picture>
+									<picture>
+										<a href="#">
+											<img src="img/flats/02/02.jpg" alt="">
+										</a>
+									</picture>
+									<picture>
+										<a href="#">
+											<img src="img/flats/02/03.jpg" alt="">
+										</a>
+									</picture>
+								</div>
+							</div>
+							<div class="col-md-7 col-lg-6">
+								 <div class="d-flex flex-column h-100 px-3 px-md-0">
+									<a href="#flat" class="card__link"></a>
+									<div class="card__price d-sm-none">56 600 000 ₽</div>
+									<h2 class="card__title text-primary">4-комн. кв., 123,11 м<sup>2</sup>, 13/20 этаж</h2>
+									<div class="text-danger">Ипотека 2,99%</div>
+									<div class="card__infoaddress">
+										<a class="nav-link card__lcd" href="#">ЖК «Aquatoria»</a>
+										<div class="card__rent text-muted">сдача ГК: 4 кв. 2021 года</div>
+										<a class="card__place text-dark" href="#">
+											<svg data-name="UndergroundIconContainer" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.233v1.481h5.556v-1.481h-.89l.89-3.175L8 12.233l2.444-3.175.89 3.175h-.89v1.481H16v-1.481h-.889l-4-9.947L8 8.423 4.889 2.286l-4 9.947H0z" fill="currentColor"></path></svg>
+											Планерная
+										</a>
+										<span class="text-muted">19 минут пешком</span>
+										<p class="card__address">
+											<a class="text-muted" href="#">Москва, </a>
+											<a class="text-muted" href="#">САО, </a>
+											<a class="text-muted" href="#">р-н Левобережный, </a>
+											<a class="text-muted" href="#">м. Планерная, </a>
+											<a class="text-muted" href="#">Акватория ЖК</a>
+										</p>
+									</div>
+									<div class="card__price d-none d-sm-block">
+										56 600 000 ₽ — Последняя квартира на этаже!<br>
+										<span class="text-muted">459 751 ₽/м²</span>
+									</div>
+									<div class="card__description d-none d-sm-block">
+										<p>О жилом комплексе. На берегу реки, на участке площадью 5 га появятся четыре жилых здания переменной этажности. Комплекс спроектирован таким образом, что почти из всех квартир открывается прекрасный панорамный вид на реку. Принципиальным моментом станет сохранение здоровой экологической обстановки на территории комплекса: у автомобилей не будет доступа во внутренний двор и на набережную. Продам квартиру в Москве.</p>
+									</div>
+									<a class="builder__btn builder__btn--mobile btn btn-light" href="tel:+7 499 285-30-28">Позвонить</a>
+								</div>
+							</div>
+							<div class="col-lg-2 d-none d-lg-block">
+								<div class="card__builder builder">
+									<a class="builder__link" href="#"></a>
+										<picture class="builder__icon">
+											<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 6a6 6 0 0 0-1.839-4.322L11.5 3H10V.343a5.998 5.998 0 0 0-4 0V3H4.5l-.661-1.323A6.004 6.004 0 0 0 2 6H1v2h14V6h-1zm-6 8c-1.136 0-2.113-.56-2.836-1.489C4.434 11.571 4 10.291 4 9H2c0 1.71.567 3.429 1.586 4.739C4.613 15.059 6.136 16 8 16c1.864 0 3.387-.94 4.414-2.261C13.434 12.429 14 10.709 14 9h-2c0 1.29-.433 2.571-1.164 3.511C10.113 13.441 9.136 14 8 14z" fill="currentColor"></path></svg>
+										</picture>
+										<div class="builder__name">Wainbrige</div>
+										<div class="text-muted">Застройщик</div>
+									</a>
+									<button class="builder__btn btn btn-primary">+7 499 285-30-28</button>
+									<a class="builder__more" href="#">Ещё объекты</a>
+								</div>
+							</div>
+							<ul class="card__tools">
+								<li data-toggle="tooltip" data-placement="left" title="Добавить в избранное">
+									<button class="card__tool card__tool--saved">
+										<svg  width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.93 3A2.92 2.92 0 0 0 2 5.908c0 2.14 1.476 4.161 3.181 5.748A20.008 20.008 0 0 0 8 13.829a20.008 20.008 0 0 0 2.819-2.174C12.524 10.07 14 8.05 14 5.909A2.92 2.92 0 0 0 11.07 3a2.93 2.93 0 0 0-2.29 1.095L8 5.064l-.78-.969A2.93 2.93 0 0 0 4.93 3zM8 15l-.49.871h-.001l-.002-.001-.006-.003-.019-.011a20.384 20.384 0 0 1-1.14-.726 22.016 22.016 0 0 1-2.523-2.01C2.024 11.45 0 8.924 0 5.908 0 3.192 2.212 1 4.93 1 6.09 1 7.158 1.4 8 2.068A4.925 4.925 0 0 1 11.07 1C13.788 1 16 3.192 16 5.908c0 3.016-2.024 5.541-3.819 7.212a22.022 22.022 0 0 1-3.596 2.697l-.067.039-.019.01-.006.004-.002.001L8 15zm0 0 .49.872-.49.275-.49-.275L8 15zm-.49-.871z" fill="currentColor"></path></svg>
+										<svg class="secondary" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5.51C0 11.46 8 16 8 16s8-4.54 8-10.49C16 3.018 13.99 1 11.509 1 10.089 1 8.823 1.661 8 2.694A4.476 4.476 0 0 0 4.491 1C2.011 1 0 3.019 0 5.51z" fill="currentColor"></path></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Добавить к сравнению">
+									<button class="card__tool card__tool--compare">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 4h14V2H1v2zm0 5h10V7H1v2zm7 5H1v-2h7v2zm4 2v-2h-2v-2h2v-2h2v2h2v2h-2v2h-2z" fill="currentColor"></path></svg>
+										<svg class="secondary" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M1 4h14V2H1v2zM1 9h10V7H1v2zM8 14H1v-2h7v2zM15.76 11.15l-1.52-1.3-2.297 2.68-1.237-1.237-1.414 1.414 2.764 2.764 3.703-4.32z"></path></g></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Скрыть">
+									<button class="card__tool" data-toggle="modal" data-target="#auth">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.66 2.184 14.246.77l-2.44 2.44C10.72 2.5 9.442 2 8 2 3 2 0 8 0 8s1.1 2.201 3.08 3.937L.77 14.246l1.414 1.414L15.66 2.184zM5.444 9.572l4.128-4.128a3 3 0 0 0-4.128 4.128z"></path><path d="m6.446 13.804 8.062-8.063C15.478 6.957 16 8 16 8s-3 6-8 6c-.542 0-1.06-.07-1.554-.196z"></path></g></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Пожаловаться">
+									<button class="card__tool" data-toggle="modal" data-target="#report">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86 2.067a1 1 0 0 0-1.72 0L.339 13.488A1 1 0 0 0 1.198 15h13.605a1 1 0 0 0 .859-1.512L8.859 2.068zM9 5H7v6h2V5zm-1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86 2.067a1 1 0 0 0-1.72 0L.339 13.488A1 1 0 0 0 1.198 15h13.605a1 1 0 0 0 .859-1.512L8.859 2.068zM9 5H7v6h2V5zm-1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Показать на карте">
+									<button class="card__tool" data-toggle="modal" data-target="#map1">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 16s7-4 7-9.333C15 2.985 11.866 0 8 0S1 2.985 1 6.667C1 12 8 16 8 16zm0-7.428a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="currentColor"></path></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Скачать PDF">
+									<a class="card__tool" href="img/flats/01/data.pdf" download="img/flats/01/data.pdf">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4h-4V0H3zm8 0v3h3l-3-3zM8 12H4v1h4v-1zM4 9h8v1H4V9z" fill="currentColor"></path></svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flats__card card">
+						<div class="row">
+							<div class="col-md-5 col-lg-4">
+								<div class="card__building-builder badge badge-dark">Новостройка от застройщика</div>
+								<a class="card__icon" href="#" data-toggle="tooltip" title="Объявление с 3D-туром"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M2.168 7.085h1.015c.483 0 .84-.12 1.074-.362.233-.242.349-.562.349-.962 0-.387-.116-.688-.35-.903-.228-.215-.544-.323-.948-.323-.365 0-.67.101-.916.303a.95.95 0 0 0-.37.778H.12c0-.5.134-.949.402-1.344.272-.4.65-.712 1.133-.936A3.805 3.805 0 0 1 3.262 3c1.015 0 1.81.244 2.385.731.576.484.863 1.151.863 2.004 0 .439-.134.843-.402 1.212-.268.37-.619.652-1.054.85.54.193.942.483 1.206.87.268.386.402.843.402 1.37 0 .853-.312 1.536-.936 2.05-.62.514-1.44.77-2.464.77-.958 0-1.742-.252-2.353-.757C.303 11.595 0 10.927 0 10.097h1.904c0 .36.134.654.402.883.273.228.607.342 1.002.342.452 0 .806-.118 1.06-.355.26-.242.39-.56.39-.956 0-.958-.528-1.436-1.582-1.436H2.168v-1.49zM8.889 12.726V3.132h2.729c.843 0 1.597.19 2.26.573a3.942 3.942 0 0 1 1.562 1.621c.373.699.56 1.494.56 2.385v.442c0 .892-.184 1.685-.553 2.379a3.92 3.92 0 0 1-1.549 1.614c-.668.382-1.421.576-2.26.58h-2.75zm1.754-7.993v6.405h.955c.773 0 1.364-.253 1.773-.758.408-.505.617-1.228.626-2.168v-.507c0-.975-.202-1.713-.606-2.214-.405-.505-.995-.758-1.773-.758h-.975z"></path></g></svg></a>
+								<div id="flats5" class="carousel slide" data-ride="carousel">
+									<div class="carousel-count badge badge-dark"></div>
+									<ol class="carousel-indicators">
+										<li data-target="#flats5" data-slide-to="0" class="active"></li>
+										<li data-target="#flats5" data-slide-to="1"></li>
+										<li data-target="#flats5" data-slide-to="2"></li>
+										<li data-target="#flats5" data-slide-to="3"></li>
+										<li data-target="#flats5" data-slide-to="4"></li>
+										<li data-target="#flats5" data-slide-to="5"></li>
+										<li data-target="#flats5" data-slide-to="6"></li>
+										<li data-target="#flats5" data-slide-to="7"></li>
+										<li data-target="#flats5" data-slide-to="8"></li>
+										<li data-target="#flats5" data-slide-to="9"></li>
+										<li data-target="#flats5" data-slide-to="10"></li>
+										<li data-target="#flats5" data-slide-to="11"></li>
+									</ol>
+									<div class="carousel-inner">
+										<a href="#" class="carousel-item active"><img class="d-block w-100" src="img/flats/01/00.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/01.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/02.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/03.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/04.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/05.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/06.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/07.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/08.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/09.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/10.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/11.jpg" alt=""></a>
+									</div>
+									<a class="carousel-control-prev" href="#flats5" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#flats5" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+								<div class="card__images">
+									<picture>
+										<a href="#">
+											<img src="img/flats/01/01.jpg" alt="">
+										</a>
+									</picture>
+									<picture>
+										<a href="#">
+											<img src="img/flats/01/02.jpg" alt="">
+										</a>
+									</picture>
+									<picture>
+										<a href="#">
+											<img src="img/flats/01/03.jpg" alt="">
+										</a>
+									</picture>
+								</div>
+							</div>
+							<div class="col-md-7 col-lg-6">
+								 <div class="d-flex flex-column h-100 px-3 px-md-0">
+									<a href="#flat" class="card__link"></a>
+									<div class="card__price d-sm-none">42 399 507 ₽</div>
+									<h2 class="card__title text-primary">4-комн. кв., 86 м<sup>2</sup>, 9/18 этаж</h2>
+									<div class="card__infoaddress">
+										<a class="nav-link card__lcd" href="#">ЖК «Voxhall»</a>
+										<div class="card__rent text-muted">сдача ГК: 2 кв. 2025 года</div>
+										<a class="card__place text-dark" href="#">
+											<svg class="text-muted" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.792 1h8.416C13.194 1 14 1.792 14 2.76v8.36c0 .528-.358.88-.896.88h-1.747l1.3 3h-2.18l-1.3-3h-2.39l-1.275 3H3.339l1.275-3H2.896C2.36 12 2 11.648 2 11.12V2.76C2 1.792 2.807 1 3.792 1zM4 6h8V3H4v3zm1 4.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm7-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" fill="currentColor"></path></svg>
+											Москва (Павелецкий вокзал)
+										</a>
+										<span class="text-muted">12 минут пешком</span>
+										<p class="card__address">
+											<a class="text-muted" href="#">Москва, </a>
+											<a class="text-muted" href="#">ЦАО, </a>
+											<a class="text-muted" href="#">р-н Замоскворечье, </a>
+											<a class="text-muted" href="#">Летниковская улица</a>
+										</p>
+									</div>
+									<div class="card__price d-none d-sm-block">
+										42 399 507 ₽<br>
+										<span class="text-muted">493 018 ₽/м²</span>
+									</div>
+									<div class="card__description d-none d-sm-block">
+										<p>Продаётся 4-комнатная квартира общей площадью 86 м² c просторной кухней 5 м² на 9 этаже в корпусе 3 Жилого Комплекса Voxhall. Срок сдачи 2 кв. 2025 года. ЖК Voxhall - это дома заряженные энергией города. Новый Архитектурный проект бизнес-класса рядом с метро Павелецкая. У вас много дел и главным активом является время, которого всегда не хватает. Именно для вас мы создаём особые условия для жизни в самом центре города, в центре событий, чтобы вы могли жить с комфортом, не теряя динамичного ритма жизни. Voxhall станет вашим новым домом, в стенах которого вы сможете пополнить запас энергии и сил, чтобы проживать каждый следующий день на все 100%. Проект расположен на Летниковской улице в замоскворецком районе в непосредственной близости от павелецкого транспортного узла. Перемещайтесь так, как удобно именно вам: широкие проспекты, микромобильный транспорт, сеть велодорожек, пешеходные зоны, подземный, наземный, автомобильный, железнодорожный транспорт к вашим услугам, чтобы вы молниеносно смогли добраться туда, где вас ждут дела или напротив, развлечения. Квартира в Москве.</p>
+									</div>
+									<a class="builder__btn builder__btn--mobile btn btn-light" href="tel:+7 499 285-30-28">Позвонить</a>
+								</div>
+							</div>
+							<div class="col-lg-2 d-none d-lg-block">
+								<div class="card__builder builder">
+									<a class="builder__link" href="#"></a>
+										<picture class="builder__icon">
+											<img src="img/builders/etalon.jpg" alt="">
+										</picture>
+										<div class="builder__name">Эталон</div>
+										<div class="text-muted">Застройщик</div>
+									</a>
+									<button class="builder__btn btn btn-primary">+7 499 285-30-28</button>
+									<a class="builder__more" href="#">Ещё объекты</a>
+								</div>
+							</div>
+						</div>
+						<ul class="card__tools">
+							<li data-toggle="tooltip" data-placement="left" title="Добавить в избранное">
+								<button class="card__tool card__tool--saved">
+									<svg  width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.93 3A2.92 2.92 0 0 0 2 5.908c0 2.14 1.476 4.161 3.181 5.748A20.008 20.008 0 0 0 8 13.829a20.008 20.008 0 0 0 2.819-2.174C12.524 10.07 14 8.05 14 5.909A2.92 2.92 0 0 0 11.07 3a2.93 2.93 0 0 0-2.29 1.095L8 5.064l-.78-.969A2.93 2.93 0 0 0 4.93 3zM8 15l-.49.871h-.001l-.002-.001-.006-.003-.019-.011a20.384 20.384 0 0 1-1.14-.726 22.016 22.016 0 0 1-2.523-2.01C2.024 11.45 0 8.924 0 5.908 0 3.192 2.212 1 4.93 1 6.09 1 7.158 1.4 8 2.068A4.925 4.925 0 0 1 11.07 1C13.788 1 16 3.192 16 5.908c0 3.016-2.024 5.541-3.819 7.212a22.022 22.022 0 0 1-3.596 2.697l-.067.039-.019.01-.006.004-.002.001L8 15zm0 0 .49.872-.49.275-.49-.275L8 15zm-.49-.871z" fill="currentColor"></path></svg>
+									<svg class="secondary" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5.51C0 11.46 8 16 8 16s8-4.54 8-10.49C16 3.018 13.99 1 11.509 1 10.089 1 8.823 1.661 8 2.694A4.476 4.476 0 0 0 4.491 1C2.011 1 0 3.019 0 5.51z" fill="currentColor"></path></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Добавить к сравнению">
+								<button class="card__tool card__tool--compare">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 4h14V2H1v2zm0 5h10V7H1v2zm7 5H1v-2h7v2zm4 2v-2h-2v-2h2v-2h2v2h2v2h-2v2h-2z" fill="currentColor"></path></svg>
+									<svg class="secondary" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M1 4h14V2H1v2zM1 9h10V7H1v2zM8 14H1v-2h7v2zM15.76 11.15l-1.52-1.3-2.297 2.68-1.237-1.237-1.414 1.414 2.764 2.764 3.703-4.32z"></path></g></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Скрыть">
+								<button class="card__tool" data-toggle="modal" data-target="#auth">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.66 2.184 14.246.77l-2.44 2.44C10.72 2.5 9.442 2 8 2 3 2 0 8 0 8s1.1 2.201 3.08 3.937L.77 14.246l1.414 1.414L15.66 2.184zM5.444 9.572l4.128-4.128a3 3 0 0 0-4.128 4.128z"></path><path d="m6.446 13.804 8.062-8.063C15.478 6.957 16 8 16 8s-3 6-8 6c-.542 0-1.06-.07-1.554-.196z"></path></g></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Пожаловаться">
+								<button class="card__tool" data-toggle="modal" data-target="#report">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86 2.067a1 1 0 0 0-1.72 0L.339 13.488A1 1 0 0 0 1.198 15h13.605a1 1 0 0 0 .859-1.512L8.859 2.068zM9 5H7v6h2V5zm-1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86 2.067a1 1 0 0 0-1.72 0L.339 13.488A1 1 0 0 0 1.198 15h13.605a1 1 0 0 0 .859-1.512L8.859 2.068zM9 5H7v6h2V5zm-1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Показать на карте">
+								<button class="card__tool" data-toggle="modal" data-target="#map1">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 16s7-4 7-9.333C15 2.985 11.866 0 8 0S1 2.985 1 6.667C1 12 8 16 8 16zm0-7.428a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="currentColor"></path></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Скачать PDF">
+								<a class="card__tool" href="img/flats/01/data.pdf" download="img/flats/01/data.pdf">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4h-4V0H3zm8 0v3h3l-3-3zM8 12H4v1h4v-1zM4 9h8v1H4V9z" fill="currentColor"></path></svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="flats__card card">
+						<div class="row">
+							<div class="col-md-5 col-lg-4">
+								<div class="card__building-builder badge badge-dark">Новостройка от застройщика</div>
+								<a class="card__icon" href="#" data-toggle="tooltip" title="Объявление с записью на просмотр"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 0h2v2h.4c.56 0 .84 0 1.054.109a1 1 0 0 1 .437.437C15 2.76 15 3.04 15 3.6v1.655A7 7 0 0 0 4.674 14H2.6c-.56 0-.84 0-1.054-.109a1 1 0 0 1-.437-.437C1 13.24 1 12.96 1 12.4V3.6c0-.56 0-.84.109-1.054a1 1 0 0 1 .437-.437C1.76 2 2.04 2 2.6 2H3V0h2v2h6V0zm5 11a5 5 0 1 1-10 0 5 5 0 0 1 10 0zm-6 0V7.5h2V10h1.5v2H10v-1z" fill="currentColor"></path></svg></a>
+								<div id="flats6" class="carousel slide" data-ride="carousel">
+									<div class="carousel-count badge badge-dark"></div>
+									<ol class="carousel-indicators">
+										<li data-target="#flats6" data-slide-to="0" class="active"></li>
+										<li data-target="#flats6" data-slide-to="1"></li>
+										<li data-target="#flats6" data-slide-to="2"></li>
+										<li data-target="#flats6" data-slide-to="3"></li>
+										<li data-target="#flats6" data-slide-to="4"></li>
+										<li data-target="#flats6" data-slide-to="5"></li>
+										<li data-target="#flats6" data-slide-to="6"></li>
+										<li data-target="#flats6" data-slide-to="7"></li>
+										<li data-target="#flats6" data-slide-to="8"></li>
+										<li data-target="#flats6" data-slide-to="9"></li>
+										<li data-target="#flats6" data-slide-to="10"></li>
+										<li data-target="#flats6" data-slide-to="12"></li>
+										<li data-target="#flats6" data-slide-to="13"></li>
+										<li data-target="#flats6" data-slide-to="14"></li>
+										<li data-target="#flats6" data-slide-to="15"></li>
+										<li data-target="#flats6" data-slide-to="16"></li>
+									</ol>
+									<div class="carousel-inner">
+										<a href="#" class="carousel-item active"><img class="d-block w-100" src="img/flats/02/00.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/01.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/02.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/03.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/04.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/05.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/06.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/07.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/08.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/09.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/10.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/11.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/12.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/13.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/14.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/15.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/02/16.jpg" alt=""></a>
+									</div>
+									<a class="carousel-control-prev" href="#flats6" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#flats6" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+								<div class="card__images">
+									<picture>
+										<a href="#">
+											<img src="img/flats/02/01.jpg" alt="">
+										</a>
+									</picture>
+									<picture>
+										<a href="#">
+											<img src="img/flats/02/02.jpg" alt="">
+										</a>
+									</picture>
+									<picture>
+										<a href="#">
+											<img src="img/flats/02/03.jpg" alt="">
+										</a>
+									</picture>
+								</div>
+							</div>
+							<div class="col-md-7 col-lg-6">
+								 <div class="d-flex flex-column h-100 px-3 px-md-0">
+									<a href="#flat" class="card__link"></a>
+									<div class="card__price d-sm-none">56 600 000 ₽</div>
+									<h2 class="card__title text-primary">4-комн. кв., 123,11 м<sup>2</sup>, 13/20 этаж</h2>
+									<div class="text-danger">Ипотека 2,99%</div>
+									<div class="card__infoaddress">
+										<a class="nav-link card__lcd" href="#">ЖК «Aquatoria»</a>
+										<div class="card__rent text-muted">сдача ГК: 4 кв. 2021 года</div>
+										<a class="card__place text-dark" href="#">
+											<svg data-name="UndergroundIconContainer" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.233v1.481h5.556v-1.481h-.89l.89-3.175L8 12.233l2.444-3.175.89 3.175h-.89v1.481H16v-1.481h-.889l-4-9.947L8 8.423 4.889 2.286l-4 9.947H0z" fill="currentColor"></path></svg>
+											Планерная
+										</a>
+										<span class="text-muted">19 минут пешком</span>
+										<p class="card__address">
+											<a class="text-muted" href="#">Москва, </a>
+											<a class="text-muted" href="#">САО, </a>
+											<a class="text-muted" href="#">р-н Левобережный, </a>
+											<a class="text-muted" href="#">м. Планерная, </a>
+											<a class="text-muted" href="#">Акватория ЖК</a>
+										</p>
+									</div>
+									<div class="card__price d-none d-sm-block">
+										56 600 000 ₽ — Последняя квартира на этаже!<br>
+										<span class="text-muted">459 751 ₽/м²</span>
+									</div>
+									<div class="card__description d-none d-sm-block">
+										<p>О жилом комплексе. На берегу реки, на участке площадью 5 га появятся четыре жилых здания переменной этажности. Комплекс спроектирован таким образом, что почти из всех квартир открывается прекрасный панорамный вид на реку. Принципиальным моментом станет сохранение здоровой экологической обстановки на территории комплекса: у автомобилей не будет доступа во внутренний двор и на набережную. Продам квартиру в Москве.</p>
+									</div>
+									<a class="builder__btn builder__btn--mobile btn btn-light" href="tel:+7 499 285-30-28">Позвонить</a>
+								</div>
+							</div>
+							<div class="col-lg-2 d-none d-lg-block">
+								<div class="card__builder builder">
+									<a class="builder__link" href="#"></a>
+										<picture class="builder__icon">
+											<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 6a6 6 0 0 0-1.839-4.322L11.5 3H10V.343a5.998 5.998 0 0 0-4 0V3H4.5l-.661-1.323A6.004 6.004 0 0 0 2 6H1v2h14V6h-1zm-6 8c-1.136 0-2.113-.56-2.836-1.489C4.434 11.571 4 10.291 4 9H2c0 1.71.567 3.429 1.586 4.739C4.613 15.059 6.136 16 8 16c1.864 0 3.387-.94 4.414-2.261C13.434 12.429 14 10.709 14 9h-2c0 1.29-.433 2.571-1.164 3.511C10.113 13.441 9.136 14 8 14z" fill="currentColor"></path></svg>
+										</picture>
+										<div class="builder__name">Wainbrige</div>
+										<div class="text-muted">Застройщик</div>
+									</a>
+									<button class="builder__btn btn btn-primary">+7 499 285-30-28</button>
+									<a class="builder__more" href="#">Ещё объекты</a>
+								</div>
+							</div>
+							<ul class="card__tools">
+								<li data-toggle="tooltip" data-placement="left" title="Добавить в избранное">
+									<button class="card__tool card__tool--saved">
+										<svg  width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.93 3A2.92 2.92 0 0 0 2 5.908c0 2.14 1.476 4.161 3.181 5.748A20.008 20.008 0 0 0 8 13.829a20.008 20.008 0 0 0 2.819-2.174C12.524 10.07 14 8.05 14 5.909A2.92 2.92 0 0 0 11.07 3a2.93 2.93 0 0 0-2.29 1.095L8 5.064l-.78-.969A2.93 2.93 0 0 0 4.93 3zM8 15l-.49.871h-.001l-.002-.001-.006-.003-.019-.011a20.384 20.384 0 0 1-1.14-.726 22.016 22.016 0 0 1-2.523-2.01C2.024 11.45 0 8.924 0 5.908 0 3.192 2.212 1 4.93 1 6.09 1 7.158 1.4 8 2.068A4.925 4.925 0 0 1 11.07 1C13.788 1 16 3.192 16 5.908c0 3.016-2.024 5.541-3.819 7.212a22.022 22.022 0 0 1-3.596 2.697l-.067.039-.019.01-.006.004-.002.001L8 15zm0 0 .49.872-.49.275-.49-.275L8 15zm-.49-.871z" fill="currentColor"></path></svg>
+										<svg class="secondary" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5.51C0 11.46 8 16 8 16s8-4.54 8-10.49C16 3.018 13.99 1 11.509 1 10.089 1 8.823 1.661 8 2.694A4.476 4.476 0 0 0 4.491 1C2.011 1 0 3.019 0 5.51z" fill="currentColor"></path></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Добавить к сравнению">
+									<button class="card__tool card__tool--compare">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 4h14V2H1v2zm0 5h10V7H1v2zm7 5H1v-2h7v2zm4 2v-2h-2v-2h2v-2h2v2h2v2h-2v2h-2z" fill="currentColor"></path></svg>
+										<svg class="secondary" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M1 4h14V2H1v2zM1 9h10V7H1v2zM8 14H1v-2h7v2zM15.76 11.15l-1.52-1.3-2.297 2.68-1.237-1.237-1.414 1.414 2.764 2.764 3.703-4.32z"></path></g></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Скрыть">
+									<button class="card__tool" data-toggle="modal" data-target="#auth">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.66 2.184 14.246.77l-2.44 2.44C10.72 2.5 9.442 2 8 2 3 2 0 8 0 8s1.1 2.201 3.08 3.937L.77 14.246l1.414 1.414L15.66 2.184zM5.444 9.572l4.128-4.128a3 3 0 0 0-4.128 4.128z"></path><path d="m6.446 13.804 8.062-8.063C15.478 6.957 16 8 16 8s-3 6-8 6c-.542 0-1.06-.07-1.554-.196z"></path></g></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Пожаловаться">
+									<button class="card__tool" data-toggle="modal" data-target="#report">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86 2.067a1 1 0 0 0-1.72 0L.339 13.488A1 1 0 0 0 1.198 15h13.605a1 1 0 0 0 .859-1.512L8.859 2.068zM9 5H7v6h2V5zm-1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86 2.067a1 1 0 0 0-1.72 0L.339 13.488A1 1 0 0 0 1.198 15h13.605a1 1 0 0 0 .859-1.512L8.859 2.068zM9 5H7v6h2V5zm-1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Показать на карте">
+									<button class="card__tool" data-toggle="modal" data-target="#map1">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 16s7-4 7-9.333C15 2.985 11.866 0 8 0S1 2.985 1 6.667C1 12 8 16 8 16zm0-7.428a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="currentColor"></path></svg>
+									</button>
+								</li>
+								<li data-toggle="tooltip" data-placement="left" title="Скачать PDF">
+									<a class="card__tool" href="img/flats/01/data.pdf" download="img/flats/01/data.pdf">
+										<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4h-4V0H3zm8 0v3h3l-3-3zM8 12H4v1h4v-1zM4 9h8v1H4V9z" fill="currentColor"></path></svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flats__card card">
+						<div class="row">
+							<div class="col-md-5 col-lg-4">
+								<div class="card__building-builder badge badge-dark">Новостройка от застройщика</div>
+								<a class="card__icon" href="#" data-toggle="tooltip" title="Объявление с 3D-туром"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M2.168 7.085h1.015c.483 0 .84-.12 1.074-.362.233-.242.349-.562.349-.962 0-.387-.116-.688-.35-.903-.228-.215-.544-.323-.948-.323-.365 0-.67.101-.916.303a.95.95 0 0 0-.37.778H.12c0-.5.134-.949.402-1.344.272-.4.65-.712 1.133-.936A3.805 3.805 0 0 1 3.262 3c1.015 0 1.81.244 2.385.731.576.484.863 1.151.863 2.004 0 .439-.134.843-.402 1.212-.268.37-.619.652-1.054.85.54.193.942.483 1.206.87.268.386.402.843.402 1.37 0 .853-.312 1.536-.936 2.05-.62.514-1.44.77-2.464.77-.958 0-1.742-.252-2.353-.757C.303 11.595 0 10.927 0 10.097h1.904c0 .36.134.654.402.883.273.228.607.342 1.002.342.452 0 .806-.118 1.06-.355.26-.242.39-.56.39-.956 0-.958-.528-1.436-1.582-1.436H2.168v-1.49zM8.889 12.726V3.132h2.729c.843 0 1.597.19 2.26.573a3.942 3.942 0 0 1 1.562 1.621c.373.699.56 1.494.56 2.385v.442c0 .892-.184 1.685-.553 2.379a3.92 3.92 0 0 1-1.549 1.614c-.668.382-1.421.576-2.26.58h-2.75zm1.754-7.993v6.405h.955c.773 0 1.364-.253 1.773-.758.408-.505.617-1.228.626-2.168v-.507c0-.975-.202-1.713-.606-2.214-.405-.505-.995-.758-1.773-.758h-.975z"></path></g></svg></a>
+								<div id="flats7" class="carousel slide" data-ride="carousel">
+									<div class="carousel-count badge badge-dark"></div>
+									<ol class="carousel-indicators">
+										<li data-target="#flats7" data-slide-to="0" class="active"></li>
+										<li data-target="#flats7" data-slide-to="1"></li>
+										<li data-target="#flats7" data-slide-to="2"></li>
+										<li data-target="#flats7" data-slide-to="3"></li>
+										<li data-target="#flats7" data-slide-to="4"></li>
+										<li data-target="#flats7" data-slide-to="5"></li>
+										<li data-target="#flats7" data-slide-to="6"></li>
+										<li data-target="#flats7" data-slide-to="7"></li>
+										<li data-target="#flats7" data-slide-to="8"></li>
+										<li data-target="#flats7" data-slide-to="9"></li>
+										<li data-target="#flats7" data-slide-to="10"></li>
+										<li data-target="#flats7" data-slide-to="11"></li>
+									</ol>
+									<div class="carousel-inner">
+										<a href="#" class="carousel-item active"><img class="d-block w-100" src="img/flats/01/00.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/01.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/02.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/03.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/04.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/05.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/06.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/07.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/08.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/09.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/10.jpg" alt=""></a>
+										<a href="#" class="carousel-item"><img class="d-block w-100" src="img/flats/01/11.jpg" alt=""></a>
+									</div>
+									<a class="carousel-control-prev" href="#flats7" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#flats7" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+								<div class="card__images">
+									<picture>
+										<a href="#">
+											<img src="img/flats/01/01.jpg" alt="">
+										</a>
+									</picture>
+									<picture>
+										<a href="#">
+											<img src="img/flats/01/02.jpg" alt="">
+										</a>
+									</picture>
+									<picture>
+										<a href="#">
+											<img src="img/flats/01/03.jpg" alt="">
+										</a>
+									</picture>
+								</div>
+							</div>
+							<div class="col-md-7 col-lg-6">
+								 <div class="d-flex flex-column h-100 px-3 px-md-0">
+									<a href="#flat" class="card__link"></a>
+									<div class="card__price d-sm-none">42 399 507 ₽</div>
+									<h2 class="card__title text-primary">4-комн. кв., 86 м<sup>2</sup>, 9/18 этаж</h2>
+									<div class="card__infoaddress">
+										<a class="nav-link card__lcd" href="#">ЖК «Voxhall»</a>
+										<div class="card__rent text-muted">сдача ГК: 2 кв. 2025 года</div>
+										<a class="card__place text-dark" href="#">
+											<svg class="text-muted" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.792 1h8.416C13.194 1 14 1.792 14 2.76v8.36c0 .528-.358.88-.896.88h-1.747l1.3 3h-2.18l-1.3-3h-2.39l-1.275 3H3.339l1.275-3H2.896C2.36 12 2 11.648 2 11.12V2.76C2 1.792 2.807 1 3.792 1zM4 6h8V3H4v3zm1 4.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm7-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" fill="currentColor"></path></svg>
+											Москва (Павелецкий вокзал)
+										</a>
+										<span class="text-muted">12 минут пешком</span>
+										<p class="card__address">
+											<a class="text-muted" href="#">Москва, </a>
+											<a class="text-muted" href="#">ЦАО, </a>
+											<a class="text-muted" href="#">р-н Замоскворечье, </a>
+											<a class="text-muted" href="#">Летниковская улица</a>
+										</p>
+									</div>
+									<div class="card__price d-none d-sm-block">
+										42 399 507 ₽<br>
+										<span class="text-muted">493 018 ₽/м²</span>
+									</div>
+									<div class="card__description d-none d-sm-block">
+										<p>Продаётся 4-комнатная квартира общей площадью 86 м² c просторной кухней 5 м² на 9 этаже в корпусе 3 Жилого Комплекса Voxhall. Срок сдачи 2 кв. 2025 года. ЖК Voxhall - это дома заряженные энергией города. Новый Архитектурный проект бизнес-класса рядом с метро Павелецкая. У вас много дел и главным активом является время, которого всегда не хватает. Именно для вас мы создаём особые условия для жизни в самом центре города, в центре событий, чтобы вы могли жить с комфортом, не теряя динамичного ритма жизни. Voxhall станет вашим новым домом, в стенах которого вы сможете пополнить запас энергии и сил, чтобы проживать каждый следующий день на все 100%. Проект расположен на Летниковской улице в замоскворецком районе в непосредственной близости от павелецкого транспортного узла. Перемещайтесь так, как удобно именно вам: широкие проспекты, микромобильный транспорт, сеть велодорожек, пешеходные зоны, подземный, наземный, автомобильный, железнодорожный транспорт к вашим услугам, чтобы вы молниеносно смогли добраться туда, где вас ждут дела или напротив, развлечения. Квартира в Москве.</p>
+									</div>
+									<a class="builder__btn builder__btn--mobile btn btn-light" href="tel:+7 499 285-30-28">Позвонить</a>
+								</div>
+							</div>
+							<div class="col-lg-2 d-none d-lg-block">
+								<div class="card__builder builder">
+									<a class="builder__link" href="#"></a>
+										<picture class="builder__icon">
+											<img src="img/builders/etalon.jpg" alt="">
+										</picture>
+										<div class="builder__name">Эталон</div>
+										<div class="text-muted">Застройщик</div>
+									</a>
+									<button class="builder__btn btn btn-primary">+7 499 285-30-28</button>
+									<a class="builder__more" href="#">Ещё объекты</a>
+								</div>
+							</div>
+						</div>
+						<ul class="card__tools">
+							<li data-toggle="tooltip" data-placement="left" title="Добавить в избранное">
+								<button class="card__tool card__tool--saved">
+									<svg  width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.93 3A2.92 2.92 0 0 0 2 5.908c0 2.14 1.476 4.161 3.181 5.748A20.008 20.008 0 0 0 8 13.829a20.008 20.008 0 0 0 2.819-2.174C12.524 10.07 14 8.05 14 5.909A2.92 2.92 0 0 0 11.07 3a2.93 2.93 0 0 0-2.29 1.095L8 5.064l-.78-.969A2.93 2.93 0 0 0 4.93 3zM8 15l-.49.871h-.001l-.002-.001-.006-.003-.019-.011a20.384 20.384 0 0 1-1.14-.726 22.016 22.016 0 0 1-2.523-2.01C2.024 11.45 0 8.924 0 5.908 0 3.192 2.212 1 4.93 1 6.09 1 7.158 1.4 8 2.068A4.925 4.925 0 0 1 11.07 1C13.788 1 16 3.192 16 5.908c0 3.016-2.024 5.541-3.819 7.212a22.022 22.022 0 0 1-3.596 2.697l-.067.039-.019.01-.006.004-.002.001L8 15zm0 0 .49.872-.49.275-.49-.275L8 15zm-.49-.871z" fill="currentColor"></path></svg>
+									<svg class="secondary" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 5.51C0 11.46 8 16 8 16s8-4.54 8-10.49C16 3.018 13.99 1 11.509 1 10.089 1 8.823 1.661 8 2.694A4.476 4.476 0 0 0 4.491 1C2.011 1 0 3.019 0 5.51z" fill="currentColor"></path></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Добавить к сравнению">
+								<button class="card__tool card__tool--compare">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 4h14V2H1v2zm0 5h10V7H1v2zm7 5H1v-2h7v2zm4 2v-2h-2v-2h2v-2h2v2h2v2h-2v2h-2z" fill="currentColor"></path></svg>
+									<svg class="secondary" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M1 4h14V2H1v2zM1 9h10V7H1v2zM8 14H1v-2h7v2zM15.76 11.15l-1.52-1.3-2.297 2.68-1.237-1.237-1.414 1.414 2.764 2.764 3.703-4.32z"></path></g></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Скрыть">
+								<button class="card__tool" data-toggle="modal" data-target="#auth">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.66 2.184 14.246.77l-2.44 2.44C10.72 2.5 9.442 2 8 2 3 2 0 8 0 8s1.1 2.201 3.08 3.937L.77 14.246l1.414 1.414L15.66 2.184zM5.444 9.572l4.128-4.128a3 3 0 0 0-4.128 4.128z"></path><path d="m6.446 13.804 8.062-8.063C15.478 6.957 16 8 16 8s-3 6-8 6c-.542 0-1.06-.07-1.554-.196z"></path></g></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Пожаловаться">
+								<button class="card__tool" data-toggle="modal" data-target="#report">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86 2.067a1 1 0 0 0-1.72 0L.339 13.488A1 1 0 0 0 1.198 15h13.605a1 1 0 0 0 .859-1.512L8.859 2.068zM9 5H7v6h2V5zm-1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.86 2.067a1 1 0 0 0-1.72 0L.339 13.488A1 1 0 0 0 1.198 15h13.605a1 1 0 0 0 .859-1.512L8.859 2.068zM9 5H7v6h2V5zm-1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"></path></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Показать на карте">
+								<button class="card__tool" data-toggle="modal" data-target="#map1">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 16s7-4 7-9.333C15 2.985 11.866 0 8 0S1 2.985 1 6.667C1 12 8 16 8 16zm0-7.428a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="currentColor"></path></svg>
+								</button>
+							</li>
+							<li data-toggle="tooltip" data-placement="left" title="Скачать PDF">
+								<a class="card__tool" href="img/flats/01/data.pdf" download="img/flats/01/data.pdf">
+									<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4h-4V0H3zm8 0v3h3l-3-3zM8 12H4v1h4v-1zM4 9h8v1H4V9z" fill="currentColor"></path></svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="print">
+				<div class="container-fluid">
+					<nav aria-label="Page navigation example">
+						<ul class="pagination d-none d-sm-flex">
+							<li class="page-item active"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">4</a></li>
+							<li class="page-item"><a class="page-link" href="#">5</a></li>
+							<li class="page-item"><a class="page-link" href="#">6</a></li>
+							<li class="page-item"><a class="page-link" href="#">7</a></li>
+							<li class="page-item"><a class="page-link" href="#">8</a></li>
+							<div class="print__list d-none d-md-flex">
+								<a href="img/offers.xlsx" class="print__item" download="">Сохранить файл в Excel</a>
+								<a href="#print" class="print__item" data-toggle="modal" data-target="#print">Распечатать объявления</a>
+								<a href="#review" class="print__item" data-toggle="modal" data-target="#review">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+										<path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+									</svg>
+									Оставить отзыв</a>
+							</div>
+						</ul>
+						<div class="btn-group d-sm-none">
+							<button class="print__showmore btn btn-primary">Показать ещё</button>
+							<a href="#" class="btn btn-primary btn-circle" id="up">
+								<svg width="48" height="48" viewBox="0 0 48 48"><path data-fill-rule="fill" d="M40.18 37.09C39.11 36.01 33.71 30.61 24 20.9C14.29 30.61 8.89 36.01 7.81 37.09C6.03 38.88 3.13 38.88 1.34 37.09C-0.45 35.3 -0.45 32.4 1.34 30.61C3.28 28.67 18.82 13.13 20.77 11.19C22.55 9.4 25.45 9.4 27.24 11.19C29.18 13.13 44.72 28.67 46.66 30.61C48.45 32.4 48.45 35.3 46.66 37.09C46.66 37.09 46.66 37.09 46.66 37.09C44.87 38.88 41.97 38.88 40.18 37.09Z"></path></svg>
+							</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+
+			<div class="container-fluid d-none d-sm-block">
+				<a class="banner">
+					<div class="banner__content ibg ibg-center text-white">
+						<div class="banner__title h2">Помощь надёжных риелторов</div>
+						<div class="banner__offer h3">Риелтор партнёр Циан поможет купить или продать любую недвижимость</div>
+						<button class="btn btn-light">Оставить заявку</button>
+						<img src="https://cdn.cian.site/frontend/frontend-serp/var_C_1x.f570d3750477dbc3796f.png" alt="">
+					</div>
+				</a>
+			</div>
+
+			<div class="seolinks d-none d-sm-block">
+				<div class="container-fluid">
+					<div class="seolinks__wrapper">
+						<div class="font-weight-bold">Похожий тип квартиры</div>
+						<ul class="nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#">4-комнатные</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">5-комнатные</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Студии</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">3-комнатные</a>
+							</li>
+						</ul>
+						<div class="font-weight-bold">Ближайшие ЖК</div>
+						<ul class="nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#">ЖК "Клубный дом Печатников"</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">ЖК "PerovSky"</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">ЖК "Молодогвардейская 15"</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">ЖК "Счастье на Сходненской"</a>
+							</li>
+						</ul>
+					</div>
+					<div class="seolinks__wrapper">
+						<div class="font-weight-bold">Вместе с этим также ищут:</div>
+						<ul class="nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Продажа комнат в Москве</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Продажа квартир в Москве</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Продажа однокомнатных квартир в Москве</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Квартиры в новостройках в Москве</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Купить вторичку - квартиры в Москве</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="ads d-none d-sm-block">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-6">
+							<a class="ads__item" href="#">
+								<div class="ads__top">
+									<img src="img/ads/01.jpg" alt="Премиум-квартал на Кутузовском">
+									<div class="ads__info">
+										<h4 class="ads__title">Премиум-квартал на Кутузовском</h4>
+										<p class="ads__text">Действует скидка 9% только на 9 видовых апартаментов до 30 ноября. Звоните!</p>
+										<div class="ads__tel">+7 (495) 152-55-21</div>
+									</div>
+								</div>
+								<div class="ads__bottom">
+									<p class="text-muted">Акция до 30.11.2021. Подробнее на matchpointhouse.ru. Квартал «Матч Поинт». Застройщик ООО «Волей Гранд».</p>
+									<button class="btn ads__btn">Перейти на сайт</button>
+								</div>
+								<div class="badge badge-warning">Реклама</div>
+							</a>
+						</div>
+						<div class="col-lg-6">
+							<a class="ads__item" href="#">
+								<div class="ads__top">
+									<img src="img/ads/02.jpg" alt="Жилой комплекс «Бристоль»">
+									<div class="ads__info">
+										<h4 class="ads__title">Жилой комплекс «Бристоль»</h4>
+										<p class="ads__text">Малоэтажный ЖК. Общее количество квартир - 200. Площади квартир от 29,9 до 66,00 кв. м.</p>
+										<div class="ads__tel">+7 (903) 110-99-96</div>
+									</div>
+								</div>
+								<div class="ads__bottom">
+									<p class="text-muted">Специализированный застройщик «Строительная компания «Ключ». Проектная декларация на сайте наш.дом.рф</p>
+									<button class="btn ads__btn">Перейти на сайт</button>
+								</div>
+								<div class="badge badge-warning">Реклама</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="breadcrumbs d-sm-none">
+				<div class="container-fluid">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#">Недвижимость в Москве</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Продажа</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+
+			<div class="results text-muted">
+				<div class="container-fluid">
+					Найдено 85,8 тыс. квартир в Москве&nbsp;.&nbsp;Самый просторный объект 247,7 м²&nbsp;.&nbsp;Средняя цена продажи таких квартир - 16,25 млн. руб.
+				</div>
+			</div>
+
+		</main>
+
+		<div class="modal fade more-filters" tabindex="-1" id="filter-popup" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				 <div class="modal-header">
+					<h5 class="modal-title">Ещё фильтры</h5>
+					<button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+						<svg class="_93444fe79c--container--2qwwB _93444fe79c--display_inline-block--1720b _93444fe79c--color_current_color--2h-0z" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m8 9.414-5.65 5.65-1.415-1.413L6.585 8 .936 2.35 2.35.934 8 6.585l5.65-5.65 1.415 1.414L9.415 8l5.65 5.65-1.414 1.415L8 9.415z" fill="currentColor"></path></svg>
+					</button>
+				 </div>
+				 <div class="modal-body">
+					<div class="input-group">
+						<span class="more-filters__title">Тип сделки</span>
+						<label>
+							<input type="checkbox">
+							От собственника
+						</label>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">До метро</span>
+						<div class="btn-group">
+							<button class="btn active" data-toggle="checkbox">Неважно</button>
+							<button class="btn" data-toggle="checkbox">Пешком</button>
+							<button class="btn" data-toggle="checkbox">Транспорт</button>
+						</div>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Площадь, м2</span>
+						<label>
+							Общая
+							<input class="form-control" type="text" placeholder="от">
+							<input class="form-control" type="text" placeholder="до">
+						</label>
+						<label>
+							Кухня
+							<input class="form-control" type="text" placeholder="от">
+							<input class="form-control" type="text" placeholder="до">
+						</label>
+						<label>
+							Жилая
+							<input class="form-control" type="text" placeholder="от">
+							<input class="form-control" type="text" placeholder="до">
+						</label>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Планировка</span>
+						<div class="btn-group">
+							<button class="btn active" data-toggle="checkbox">Неважно</button>
+							<button class="btn" data-toggle="checkbox">Смежная</button>
+							<button class="btn" data-toggle="checkbox">Изолированная</button>
+						</div>
+						<label>
+							<input type="checkbox">
+							Схема планировки
+						</label>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Высота потолков</span>
+						<div class="btn-group">
+							<button class="btn active" data-toggle="checkbox">Неважно</button>
+							<button class="btn" data-toggle="checkbox">От 2,5 м</button>
+							<button class="btn" data-toggle="checkbox">От 2,7 м</button>
+							<button class="btn" data-toggle="checkbox">От 3 м</button>
+							<button class="btn" data-toggle="checkbox">От 3,5 м</button>
+							<button class="btn" data-toggle="checkbox">От 4 м</button>
+						</div>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Санузел</span>
+						<div class="btn-group">
+							<button class="btn active" data-toggle="checkbox">Неважно</button>
+							<button class="btn" data-toggle="checkbox">Совмещённый</button>
+							<button class="btn" data-toggle="checkbox">Разделььный</button>
+							<button class="btn" data-toggle="checkbox">Два и более</button>
+						</div>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Балкон/Лоджия</span>
+						<div class="btn-group">
+							<button class="btn active">Неважно</button>
+							<button class="btn">Балкон</button>
+							<button class="btn">Лоджия</button>
+						</div>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Ремонт</span>
+						<div class="btn-group">
+							<button class="btn active" data-toggle="checkbox">Неважно</button>
+							<button class="btn" data-toggle="checkbox">Без ремонта</button>
+							<button class="btn" data-toggle="checkbox">Косметический</button>
+							<button class="btn" data-toggle="checkbox">Евроремонт</button>
+							<button class="btn" data-toggle="checkbox">Дизайнерский</button>
+						</div>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Этаж</span>
+						<label>
+							<input class="form-control" type="text" placeholder="от">
+							<input class="form-control" type="text" placeholder="до">
+						</label>
+						<label>
+							<input type="checkbox">
+							Не первый
+						</label>
+						<label>
+							<input type="checkbox">
+							Не последний
+						</label>
+						<label>
+							<input type="checkbox">
+							Только последний
+						</label>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Этажей в доме</span>
+						<label>
+							<input class="form-control" type="text" placeholder="от">
+							<input class="form-control" type="text" placeholder="до">
+						</label>
+						<label>
+							<input type="checkbox">
+							Пентхаус
+						</label>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Вид из окна</span>
+						<div class="btn-group">
+							<button class="btn active" data-toggle="checkbox">Неважно</button>
+							<button class="btn" data-toggle="checkbox">Во двор</button>
+							<button class="btn" data-toggle="checkbox">На улицу</button>
+						</div>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Год постройки</span>
+						<label>
+							<input class="form-control" type="text" placeholder="от">
+							<input class="form-control" type="text" placeholder="до">
+						</label>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Тип дома</span>
+						<div class="btn-group">
+							<button class="btn active" data-toggle="checkbox">Неважно</button>
+							<button class="btn" data-toggle="checkbox">Кирпичный</button>
+							<button class="btn" data-toggle="checkbox">Деревянный</button>
+							<button class="btn" data-toggle="checkbox">Монолитный</button>
+							<button class="btn" data-toggle="checkbox">Панельный</button>
+							<button class="btn" data-toggle="checkbox">Блочный</button>
+							<button class="btn" data-toggle="checkbox">Кирпично-монолитный</button>
+							<button class="btn" data-toggle="checkbox">Сталинский</button>
+						</div>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Дома под снос</span>
+						<div class="btn-group">
+							<button class="btn active" data-toggle="checkbox">Неважно</button>
+							<button class="btn" data-toggle="checkbox">Не показывать</button>
+							<button class="btn" data-toggle="checkbox">Только под снос</button>
+						</div>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Лифт</span>
+						<div class="btn-group">
+							<button class="btn active" data-toggle="checkbox">Неважно</button>
+							<button class="btn" data-toggle="checkbox">Есть любой</button>
+							<button class="btn" data-toggle="checkbox">Есть грузовой</button>
+						</div>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Парковка</span>
+						<div class="btn-group">
+							<button class="btn active" data-toggle="checkbox">Неважно</button>
+							<button class="btn" data-toggle="checkbox">Наземная</button>
+							<button class="btn" data-toggle="checkbox">Многоуровневая</button>
+							<button class="btn" data-toggle="checkbox">Подземная</button>
+							<button class="btn" data-toggle="checkbox">На крыше</button>
+						</div>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Тип продажи</span>
+						<div class="btn-group">
+							<button class="btn active" data-toggle="checkbox">Неважно</button>
+							<button class="btn" data-toggle="checkbox">Свободная</button>
+							<button class="btn" data-toggle="checkbox">Альтернативная</button>
+							<button class="btn" data-toggle="checkbox">Возможна ипотека</button>
+						</div>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Апартаменты</span>
+						<div class="btn-group">
+							<button class="btn active" data-toggle="checkbox">Неважно</button>
+							<button class="btn" data-toggle="checkbox">Без апартаментов</button>
+							<button class="btn" data-toggle="checkbox">Только апартаменты</button>
+						</div>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Дата публикации</span>
+						<select class="btn form-select" tabindex="-1" aria-label="Default select example">
+							<option selected="" value="1">Не важно</option>
+							<option value="2">За месяц</option>
+							<option value="3">За неделю</option>
+							<option value="4">За сегодня</option>
+							<option value="5">За час</option>
+						</select>
+						<label>
+							<input type="checkbox">
+							Фото
+						</label>
+						<label>
+							<input type="checkbox">
+							Видео
+						</label>
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Содержит слова в объявлении</span>
+						<input class="form-control" type="text" placeholder="Например: срочно">
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Исключить слова в объявлении</span>
+						<input class="form-control" type="text" placeholder="Например: переуступка">
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Номер телефона</span>
+						<input class="form-control" type="tel" placeholder="+7 XXX XXX-XX-XX">
+					</div>
+					<div class="input-group">
+						<span class="more-filters__title">Номер объявления</span>
+						<input class="form-control" type="text">
+					</div>
+				 </div>
+				 <div class="modal-footer">
+					<button type="button" class="btn btn-secondary">Сбросить фильтры</button>
+					<button type="button" class="btn btn-primary">Показать объекты</button>
+				 </div>
+			  </div>
+			</div>
+		 </div>
+
+		 <div class="modal fade" tabindex="-1" id="map1" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				 <div class="modal-header">
+					<button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+						<svg class="_93444fe79c--container--2qwwB _93444fe79c--display_inline-block--1720b _93444fe79c--color_current_color--2h-0z" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m8 9.414-5.65 5.65-1.415-1.413L6.585 8 .936 2.35 2.35.934 8 6.585l5.65-5.65 1.415 1.414L9.415 8l5.65 5.65-1.414 1.415L8 9.415z" fill="currentColor"></path></svg>
+					</button>
+				 </div>
+				 <div class="modal-body">
+					Здесь будет когда-то карта
+				 </div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="modal fade" tabindex="-1" id="map2" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				 <div class="modal-header">
+					<button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+						<svg class="_93444fe79c--container--2qwwB _93444fe79c--display_inline-block--1720b _93444fe79c--color_current_color--2h-0z" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m8 9.414-5.65 5.65-1.415-1.413L6.585 8 .936 2.35 2.35.934 8 6.585l5.65-5.65 1.415 1.414L9.415 8l5.65 5.65-1.414 1.415L8 9.415z" fill="currentColor"></path></svg>
+					</button>
+				 </div>
+				 <div class="modal-body">
+					Здесь будет когда-то карта
+				 </div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="modal fade report" tabindex="-1" id="report" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				 <div class="modal-header">
+					<button type="button" class="btn btn-prev" data-toggle="prev">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.925 10" width="6" height="10"><path fill="currentColor" d="M.29 4.342L4.297.182c.474-.324 1.12-.204 1.446.27.23.334.244.77.037 1.12L2.495 5.06 5.78 8.43c.29.496.126 1.134-.37 1.425-.347.203-.78.19-1.113-.038L.29 5.66C.13 5.496.03 5.287 0 5.062c0-.27.104-.527.29-.72z"></path></svg>
+					</button>
+					<h5 class="modal-title">На что жалуетесь</h5>
+					<button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+						<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m8 9.414-5.65 5.65-1.415-1.413L6.585 8 .936 2.35 2.35.934 8 6.585l5.65-5.65 1.415 1.414L9.415 8l5.65 5.65-1.414 1.415L8 9.415z" fill="currentColor"></path></svg>
+					</button>
+				 </div>
+				 <div class="modal-body">
+					<ul class="report__list">
+						<li>
+							<a class="nav-link" data-toggle="sublist" href="#">Предложение уже неактуально или вымышленный объект</a>
+							<ul class="report__sublist">
+								<li><a href="#" class="nav-link">Объект продан или сдан</a></li>
+								<li><a href="#" class="nav-link">Предложили выбрать на другом сайте или агент сообщил прямо, что это рекламное объявление</a></li>
+								<li><a href="#" class="nav-link">При звонке выясняется, что объект вроде бы существует, но договориться о просмотре не удается. Предлагают другие варианты.</a></li>
+								<li><a href="#" class="nav-link">Объект соответствует фотографиям, но находится по другому адресу</a></li>
+								<li><a href="#" class="nav-link">Не удалось договориться о просмотре. После этого посыпались звонки от этого или других агентов с предложениям</a></li>
+								<li><a href="#" class="nav-link">За объект внесен аванс, но это не указано в объявлении</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="nav-link" data-toggle="sublist" href="#">Фотографии и видеоролики</a>
+							<ul class="report__sublist">
+								<li><a href="#" class="nav-link">В объявлении использованы фотографии, планировки другого объекта</a></li>
+								<li><a href="#" class="nav-link">Посторонние картинки вместо фотографий (не фотографии) или запрещенные изображения</a></li>
+								<li><a href="#" class="nav-link">На фотографиях чужие водяные знаки, контактная информация или дополнительная реклама</a></li>
+								<li><a href="#" class="nav-link">Отсутствуют фотографии, позволяющие получить представление об интерьере помещения</a></li>
+								<li><a href="#" class="nav-link">Жалоба на видеоролик</a></li>
+								<li><a href="#" class="nav-link">Фотографии используются без согласия автора</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="nav-link" data-toggle="sublist" href="#">Цена</a>
+							<ul class="report__sublist">
+								<li><a href="#" class="nav-link">Цена больше, чем указано в объявлении</a></li>
+								<li><a href="#" class="nav-link">Залог, предоплата или размер депозита не соответствует указанному в объявлении</a></li>
+								<li><a href="#" class="nav-link">Комиссия больше, чем указано в объявлении</a></li>
+								<li><a href="#" class="nav-link">Цена указана за м. кв., а не за объект в целом</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="nav-link" data-toggle="sublist" href="#">Адрес, расположение объекта</a>
+							<ul class="report__sublist">
+								<li><a href="#" class="nav-link">Город, область или регион неверные</a></li>
+								<li><a href="#" class="nav-link">Улица, дом или район неверные</a></li>
+								<li><a href="#" class="nav-link">Ж/Д станция указана неверно</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="nav-link" data-toggle="sublist" href="#">Описание и параметры объекта</a>
+							<ul class="report__sublist">
+								<li><a href="#" class="nav-link">Указано, что объявление разместил собственник, но это агент</a></li>
+								<li><a href="#" class="nav-link">Этаж или этажность указана неверно</a></li>
+								<li><a href="#" class="nav-link">Указано, что балкон/мебель/техника/инфраструктура имеются, но на самом деле отсутствуют</a></li>
+								<li><a href="#" class="nav-link">Неверно указан тип здания</a></li>
+								<li><a href="#" class="nav-link">Неверно указан тип дома</a></li>
+								<li><a href="#" class="nav-link">Площадь указана неверно</a></li>
+								<li><a href="#" class="nav-link">Количество или тип комнат, санузлов указаны неверно</a></li>
+								<li><a href="#" class="nav-link">Это не квартира, а апартаменты</a></li>
+								<li><a href="#" class="nav-link">Это не новостройка, а вторичка</a></li>
+								<li><a href="#" class="nav-link">Срок сдачи дома указан неверно</a></li>
+								<li><a href="#" class="nav-link">В описании присутствуют телефоны, ссылки, e-mail</a></li>
+								<li><a href="#" class="nav-link">В объявлении реклама услуг, не относящихся к предлагаемому объекту</a></li>
+								<li><a href="#" class="nav-link">В описании объявления предлагается несколько объектов (или предлагаются другие варианты)</a></li>
+								<li><a href="#" class="nav-link">Указано, что ремонт есть, а на самом деле нет</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="nav-link" data-toggle="sublist" href="#">Условия сделки указаны неверно</a>
+							<ul class="report__sublist">
+								<li><a href="#" class="nav-link">Тип договора продажи указан неверно</a></li>
+								<li><a href="#" class="nav-link">Это аренда, а не продажа</a></li>
+								<li><a href="#" class="nav-link">Указано, что ипотека возможна, но на самом деле — нет</a></li>
+								<li><a href="#" class="nav-link">Указано, что продажа свободная, но на самом деле — альтернативная (встречка)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="nav-link" data-toggle="sublist" href="#">Невозможно дозвониться или номер телефона ошибочный</a>
+							<ul class="report__sublist">
+								<li><a href="#" class="nav-link">Телефон никогда не отвечает или сбрасывает</a></li>
+								<li><a href="#" class="nav-link">Номер отключен</a></li>
+								<li><a href="#" class="nav-link">По телефону отвечают, что ничего не предлагают — указан чужой телефон</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="nav-link" data-toggle="sublist" href="#">Мошенничество, правовые вопросы, хулиганство</a>
+							<ul class="report__sublist">
+								<li><a href="#" class="nav-link">Агент хамит по телефону</a></li>
+								<li><a href="#" class="nav-link">Мошенничество, написано заявление в полицию</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="nav-link" data-toggle="sublist" href="#">Жалоба от собственника объекта</a>
+							<ul class="report__sublist">
+								<li><a href="#" class="nav-link">Объявление размещено без согласия собственника</a></li>
+								<li><a href="#" class="nav-link">Объект уже реализован, но объявление не снято</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="nav-link" data-toggle="sublist" href="#">Дубли объявлений</a>
+							<ul class="report__sublist">
+								<li><a href="#" class="nav-link">Это копия объявления этого же агента</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="nav-link" data-toggle="sublist" href="#">Публикация от юридического лица не на тарифе "Застройщик"</a>
+							<ul class="report__sublist">
+								<li><a href="#" class="nav-link">Объект от застройщика, подрядчика, ИП или иного юридического лица размещен не на тарифе "Застройщик"</a></li>
+							</ul>
+						</li>
+					</ul>
+				 </div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="modal fade auth" tabindex="-1" id="auth" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+							<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m8 9.414-5.65 5.65-1.415-1.413L6.585 8 .936 2.35 2.35.934 8 6.585l5.65-5.65 1.415 1.414L9.415 8l5.65 5.65-1.414 1.415L8 9.415z" fill="currentColor"></path></svg>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h4 class="h4 auth__title">Вход и регистрация</h4>
+						<form action="#" class="auth__form">
+							<input class="auth__input" type="text" placeholder="Email или id">
+							<button class="btn btn-primary auth__submit" type="submit">
+								Продолжить
+							</button>
+							<a href="#" class="auth__choose" data-toggle="phone">Войти по телефону</a>
+						</form>
+						<div>или</div>
+						<ul class="auth__APIs">
+							<li class="auth__social">
+								<button>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 13" width="22" height="13"><path fill="#FFF" d="M11.971 12.346s.358-.04.54-.236c.169-.181.164-.52.164-.52s-.025-1.59.713-1.825c.726-.23 1.661 1.536 2.649 2.217.748.513 1.317.4 1.317.4l2.644-.036s1.382-.087.726-1.175c-.055-.088-.383-.805-1.967-2.277-1.658-1.541-1.435-1.291.561-3.957 1.217-1.623 1.703-2.613 1.551-3.038-.145-.404-1.04-.298-1.04-.298l-2.976.019s-.22-.03-.385.068c-.158.095-.262.32-.262.32s-.47 1.256-1.1 2.324c-1.324 2.254-1.854 2.373-2.071 2.232-.506-.325-.38-1.31-.38-2.01 0-2.185.33-3.095-.644-3.33-.325-.079-.563-.13-1.39-.14-1.063-.01-1.962.004-2.471.254-.339.166-.6.536-.44.557.196.027.641.119.878.444.304.414.295 1.348.295 1.348s.176 2.57-.41 2.89c-.402.219-.952-.228-2.135-2.273-.605-1.048-1.062-2.206-1.062-2.206s-.088-.216-.246-.331c-.19-.14-.457-.184-.457-.184L1.746 1.6s-.427.01-.583.197c-.138.165-.011.505-.011.505s2.215 5.19 4.723 7.802c2.3 2.399 4.912 2.24 4.912 2.24h1.183l.001.002z"></path></svg>
+								</button>
+							</li>
+							<li class="auth__social">
+								<button>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill="#FFF" fill-rule="evenodd" d="M7.987 6.515v2.97l4.047-.003c-.633 1.925-1.62 2.975-4.047 2.975-2.456 0-4.373-1.996-4.373-4.457 0-2.46 1.917-4.456 4.373-4.456 1.299 0 2.138.458 2.907 1.095.617-.617.564-.705 2.131-2.187A7.452 7.452 0 0 0 7.985.5C3.853.5.5 3.858.5 8c0 4.142 3.352 7.5 7.487 7.5 6.18 0 7.691-5.392 7.19-8.985h-7.19z"></path></svg>
+								</button>
+							</li>
+							<li class="auth__social">
+								<button>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path fill="#FFF" d="M8.735 4.364c1.259 0 2.45.53 3.312 1.457 0-.398.265-.729.662-.729h.133c.596 0 .728.596.728.795v6.557c-.066.398.464.662.729.398 1.06-1.06 2.318-5.564-.663-8.147-2.715-2.385-6.424-1.987-8.345-.663C3.238 5.49 1.913 8.67 3.17 11.65c1.391 3.246 5.432 4.24 7.816 3.246 1.192-.464 1.788 1.126.53 1.722-1.92.795-7.22.728-9.67-3.577C.19 10.126.257 5.026 4.695 2.31 8.073.257 12.577.853 15.226 3.701c2.848 2.98 2.65 8.544-.066 10.664-1.259.993-3.113 0-3.113-1.391v-.464a4.715 4.715 0 0 1-3.312 1.391c-2.45 0-4.636-2.185-4.636-4.702-.067-2.65 2.12-4.835 4.636-4.835zm3.113 4.57c-.066-1.855-1.457-2.915-3.047-2.915h-.066c-1.854 0-2.914 1.524-2.914 3.18 0 1.92 1.258 3.113 2.914 3.113 1.855 0 3.047-1.391 3.18-2.98-.067-.067-.067-.398-.067-.398z"></path></svg>
+								</button>
+							</li>
+							<li class="auth__social">
+								<button>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 18" width="9" height="18"><path fill="#FFF" fill-rule="evenodd" d="M.063 6.454h1.765V4.74c0-.756.02-1.921.568-2.644C2.975 1.332 3.77.812 5.134.812c2.225 0 3.163.316 3.163.316l-.44 2.615s-.736-.213-1.421-.213c-.686 0-1.302.246-1.302.932v1.992h2.813l-.195 2.553H5.134v8.867H1.828V9.007H.062V6.454z"></path></svg>
+								</button>
+							</li>
+							<li class="auth__social">
+								<button>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 20" width="12" height="20"><path fill="#FFF" fill-rule="evenodd" d="M6 3.454c1.107 0 2.006.9 2.006 2.006a2.007 2.007 0 0 1-4.011 0c0-1.107.9-2.006 2.005-2.006m0 6.85a4.848 4.848 0 0 0 4.845-4.844A4.85 4.85 0 0 0 6 .615 4.85 4.85 0 0 0 1.156 5.46 4.85 4.85 0 0 0 6 10.303m1.96 3.951a9.043 9.043 0 0 0 2.813-1.166 1.42 1.42 0 0 0-1.512-2.403 6.148 6.148 0 0 1-6.522 0 1.417 1.417 0 0 0-1.956.447c-.419.664-.22 1.54.444 1.956.875.55 1.827.942 2.812 1.166l-2.707 2.708a1.42 1.42 0 0 0 2.008 2.006l2.659-2.66 2.663 2.66a1.418 1.418 0 1 0 2.006-2.006L7.96 14.254z"></path></svg>
+								</button>
+							</li>
+							<li class="auth__social">
+								<button>
+									<svg width="16" height="22" viewBox="0 0 16 22" xmlns="http://www.w3.org/2000/svg"><path fill="#FFF" d="M10.399 3.412c.539-.652.92-1.55.92-2.449 0-.123-.01-.247-.033-.348C10.41.65 9.343 1.2 8.714 1.94c-.505.573-.966 1.472-.966 2.381 0 .135.023.27.034.315.056.011.146.022.236.022.797 0 1.797-.528 2.38-1.246zm.617 1.437l.133.002c.635.014 2.257.17 3.349 1.75l-.209.14c-.496.352-1.69 1.356-1.69 3.196 0 2.605 2.28 3.526 2.348 3.548l-.026.095a9.453 9.453 0 0 1-1.176 2.399l-.236.34c-.677.955-1.428 1.827-2.493 1.827-1.19 0-1.505-.708-2.875-.708-1.347 0-1.819.73-2.908.73-1.09 0-1.853-1.01-2.73-2.234-1.01-1.45-1.83-3.684-1.83-5.818 0-3.403 2.212-5.222 4.402-5.222 1.157 0 2.123.764 2.853.764.685 0 1.763-.809 3.088-.809z" fill-rule="nonzero"></path></svg>
+								</button>
+							</li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<a href="#">Нужна помощь?</a>
+					</div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="modal fade region" tabindex="-1" id="region" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				 <div class="modal-header">
+					<input class="region__search" type="text" placeholder="Введите регион или город">
+					<div class="breadcrumbs d-none d-sm-block">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Россия</a></li>
+								<li class="breadcrumb-item"><a href="#">Москва и МО</a></li>
+							</ol>
+						</nav>
+					</div>
+					<button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+						<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m8 9.414-5.65 5.65-1.415-1.413L6.585 8 .936 2.35 2.35.934 8 6.585l5.65-5.65 1.415 1.414L9.415 8l5.65 5.65-1.414 1.415L8 9.415z" fill="currentColor"></path></svg>
+					</button>
+				 </div>
+				 <div class="modal-body">
+					<ul class="nav">
+						<li class="nav-item">
+							<button class="region__link active">Москва</button>
+						</li>
+						<li class="nav-item">
+							<button class="region__link">Московская область</button>
+						</li>
+					</ul>
+					<div class="region__lists">
+						<div class="region__item">
+							<div class="region__letter">З</div>
+							<ul class="region__list">
+								<li>
+									<button>Зеленоград</button>
+							</li>
+							</ul>
+						</div>
+						<div class="region__item">
+							<div class="region__letter">М</div>
+							<ul class="region__list">
+								<li>
+									<button>Московский</button>
+								</li>
+							</ul>
+						</div>
+						<div class="region__item">
+							<div class="region__letter">Т</div>
+							<ul class="region__list">
+								<li>
+									<button>Троицк (Москва)</button>
+								</li>
+							</ul>
+						</div>
+						<div class="region__item">
+							<div class="region__letter">Щ</div>
+							<ul class="region__list">
+								<li>
+									<button>Щербинка</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				 </div>
+				 <div class="modal-footer">
+					<button class="btn btn-primary">Показать объекты</button>
+				 </div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="modal fade" tabindex="-1" id="metro" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+							<svg class="_93444fe79c--container--2qwwB _93444fe79c--display_inline-block--1720b _93444fe79c--color_current_color--2h-0z" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m8 9.414-5.65 5.65-1.415-1.413L6.585 8 .936 2.35 2.35.934 8 6.585l5.65-5.65 1.415 1.414L9.415 8l5.65 5.65-1.414 1.415L8 9.415z" fill="currentColor"></path></svg>
+						</button>
+					</div>
+					<div class="modal-body">
+						Здесь когда-то будет карта метро
+					</div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="modal fade print" tabindex="-1" id="print" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+							<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m8 9.414-5.65 5.65-1.415-1.413L6.585 8 .936 2.35 2.35.934 8 6.585l5.65-5.65 1.415 1.414L9.415 8l5.65 5.65-1.414 1.415L8 9.415z" fill="currentColor"></path></svg>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h4 class="h4 print__title">Распечатать все объявления на странице</h4>
+						<form action="#" class="print__form">
+							<div class="input-group">
+								<label>
+									<input type="radio" name="phone" checked>
+									С телефонами
+								</label>
+								<label>
+									<input type="radio" name="comment" checked>
+									С комментарием
+								</label>
+							</div>
+							<div class="input-group">
+								<label>
+									<input type="radio" name="phone">
+									Без телефонов
+								</label>
+								<label>
+									<input type="radio" name="comment">
+									Без комментария
+								</label>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<div class="btn-group">
+							<button class="btn btn-primary" onclick="window.print()">Распечатать</button>
+							<button class="btn btn-light" data-dismiss="modal" aria-label="Close">Отменить</button>
+						</div>
+					</div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="modal fade review" tabindex="-1" id="review" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+							<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m8 9.414-5.65 5.65-1.415-1.413L6.585 8 .936 2.35 2.35.934 8 6.585l5.65-5.65 1.415 1.414L9.415 8l5.65 5.65-1.414 1.415L8 9.415z" fill="currentColor"></path></svg>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h4 class="h4 review__title">Поделитесь вашим мнением о ЦИАН</h4>
+						<form action="#" class="review__form">
+							<input class="review__input" type="email" autocomplete="off" placeholder="Email">
+							<textarea class="review__area" placeholder="Отзыв"></textarea>
+							<button class="btn btn-primary review__btn" type="submit">Отправить</button>
+						</form>
+					</div>
+			  </div>
+			</div>
+		</div>
+
+		@@include('./_footer.html')
+
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="js/script.min.js"></script>
+</body>
+</html>
